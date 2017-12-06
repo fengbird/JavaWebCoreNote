@@ -11,4 +11,5 @@
 - [01. HTML和CSS核心知识点汇总](md/HTML和CSS核心知识点汇总.md)
 - [02. JavaScript和jQuery核心知识点汇总](md/JavaScript和jQuery核心知识点汇总.md)
 - [03. MySQL核心知识点汇总](md/MySQL核心知识点汇总.md)
+- [04. JDBC核心知识点汇总](md/JDBC核心知识点汇总.md)
 
