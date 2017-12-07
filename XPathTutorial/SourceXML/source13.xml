@@ -1,0 +1,49 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>parent::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse parent contiene (se esiste) il genitore del nodo contestuale.</description>
+	<description lang="eng">The parent axis contains the parent of the context node, if there is one.</description>
+	<description lang="ger">Die "parent" Achse enthält den Elternknoten des Kontextknotens, falls ein solches existiert.</description>
+	<description lang="cze">
+Osa rodičů (parent axis) obsahuje rodiče uzlu, který je v kontextu - pokud ovšem existují.
+</description>
+	<description lang="fre">
+L'axe "parent" contient le parent du noeud contextuel s'il en a un
+</description>
+	<description lang="dut">De parent spil bevat de ouder van de context geleding, als er al een is</description>
+	<description lang="spa">El eje 'parent' contiene el padre del nodo del contexto, 
+   si éste existe.</description>
+	<description lang="rus">Ось parent содержит родителя контекстного узла, если он существует.</description>
+	<description lang="chi">parent轴(axis)包含上下文节点的父节点, 如果有父节点的话</description>
+	<source>
+		<AAA>
+			<BBB>
+				<DDD>
+					<CCC>
+						<DDD/>
+						<EEE/>
+					</CCC>
+				</DDD>
+			</BBB>
+			<CCC>
+				<DDD>
+					<EEE>
+						<DDD>
+							<FFF/>
+						</DDD>
+					</EEE>
+				</DDD>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="//DDD/parent::*">
+	        <p lang="ita">Selezione di tutti i nodi genitore dell'elemento DDD</p>
+		<p lang="eng">Select all parents of DDD element</p>
+		<p lang="ger">Wähle alle Eltern von DDD Elementen aus</p>
+		<p lang="cze">Vyber všechny rodiče elementů DDD</p>
+		<p lang="dut">Selecteert alle ouders van het DDD element</p>
+		<p lang="spa">Selecciona el padres de cada elemento DDD</p>
+		<p lang="rus">Выбираются все родители элемента DDD </p>
+		<p lang="chi">选择DDD元素的所有父节点</p>
+	</example>
+</XPathTutorial>

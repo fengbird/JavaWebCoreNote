@@ -1,0 +1,147 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" type="text/css" href="../CSS/tutorial.css">
+      <title>XPath Tutorial</title>
+   </head>
+   <body>
+      <table xmlns="http://www.w3.org/1999/xhtml" width="100%">
+         <tr>
+            <td><span class="mediumText"><b>&gt;&gt;&nbsp;English&nbsp;&lt;&lt;</b> | <a class="naviBlack" target="_self" href="../Output_cze/examples.html">česky</a> | <a class="naviBlack" target="_self" href="../Output_dut/examples.html">Nederlands</a> | <a class="naviBlack" target="_self" href="../Output_fre/examples.html">Fran&ccedil;ais</a> | <a class="naviBlack" target="_self" href="../Output_spa/examples.html">Espa&ntilde;ol</a> | <a class="naviBlack" target="_self" href="../Output_rus/examples.html">По-русски</a> | <a class="naviBlack" target="_self" href="../Output_ger/examples.html">Deutsch</a> | <a class="naviBlack" target="_self" href="../Output_chi/examples.html">中文</a> | <a class="naviBlack" target="_self" href="../Output_ita/examples.html">Italiano</a></span></td>
+         </tr>
+      </table>
+      <table xmlns="http://www.w3.org/1999/xhtml" class="bar" width="750px" border="0" cellpadding="0" cellspacing="0">
+         <tr>
+            <td class="naviBlue"><a class="naviWhite" target="_top" href="../General/examples.html">Intro</a> 
+               	/
+               	  <a class="naviWhite" target="_top" href="http://zvon.org/search.php">Search</a> 
+               	/
+               	<a class="naviWhite" target="_top" href="http://www.zvon.org"> ZVON </a></td>
+         </tr>
+      </table>
+      <table xmlns="http://www.w3.org/1999/xhtml" width="100%">
+         <tr>
+            <td class="descriptionMenu">
+               <ul>
+                  <li>
+                     	 &gt;&gt;&nbsp;Examples&nbsp;&lt;&lt;
+                     
+                  </li>
+                  <li><a class="menu" href="./paths.html">XPaths</a></li>
+               </ul>
+            </td>
+         </tr>
+      </table>
+      <hr xmlns="http://www.w3.org/1999/xhtml">
+      <table border="1" width="100%" cellpadding="1">
+         <tr>
+            <td><a class="example" href="example1.html" target="mainWindow">Example 1</a><br>The basic XPath syntax is similar to filesystem addressing. If the path starts with the slash / , then it represents an absolute
+               path to the required element.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example2.html" target="mainWindow">Example 2</a><br>If the path starts with // then all elements in the document which fulfill following criteria are selected.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example3.html" target="mainWindow">Example 3</a><br>The star * selects all elements located by preceeding path
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example4.html" target="mainWindow">Example 4</a><br>Expresion in square brackets can further specify an element. A number in the brackets gives the position of the element in
+               the selected set. The function last() selects the last element in the selection.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example5.html" target="mainWindow">Example 5</a><br>Attributes are specified by @ prefix.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example6.html" target="mainWindow">Example 6</a><br>Values of attributes can be used as selection criteria. Function normalize-space removes leading and trailing spaces and replaces
+               sequences of whitespace characters by a single space.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example7.html" target="mainWindow">Example 7</a><br>Function count() counts the number of selected elements 
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example8.html" target="mainWindow">Example 8</a><br>Function name() returns name of the element, the starts-with function returns true if the first argument string starts with
+               the second argument string, and the contains function returns true if the first argument string contains the second argument
+               string.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example9.html" target="mainWindow">Example 9</a><br>The string-length function returns the number of characters in the string. You must use &amp;lt; as a substitute for &lt;  and &amp;gt;
+               as a substitute for &gt; .
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example10.html" target="mainWindow">Example 10</a><br>Several paths can be combined with | separator.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example11.html" target="mainWindow">Example 11</a><br>The child axis contains the children of the context node. The child axis is the default axis and it can be omitted.  
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example12.html" target="mainWindow">Example 12</a><br>The descendant axis contains the descendants of the context node; a descendant is a child or a child of a child and so on;
+               thus the descendant axis never contains attribute or namespace nodes
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example13.html" target="mainWindow">Example 13</a><br>The parent axis contains the parent of the context node, if there is one.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example14.html" target="mainWindow">Example 14</a><br>The ancestor axis contains the ancestors of the context node; the ancestors of the context node consist of the parent of 
+               context node and the parent's parent and so on; thus, the ancestor axis will always include the root node, unless the context
+               node is the root node.
+               
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example15.html" target="mainWindow">Example 15</a><br>The following-sibling axis contains all the following siblings of the context node.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example16.html" target="mainWindow">Example 16</a><br>The preceding-sibling axis contains all the preceding siblings of the context node
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example17.html" target="mainWindow">Example 17</a><br>The following axis contains all nodes in the same document as the context node that are after the context node in document
+               order, excluding any descendants and excluding attribute nodes and namespace nodes.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example18.html" target="mainWindow">Example 18</a><br>The preceding axis contains all nodes in the same document as the context node that are before the context node in  document
+               order, excluding any ancestors and excluding attribute nodes and namespace nodes
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example19.html" target="mainWindow">Example 19</a><br>The descendant-or-self axis contains the context node and the descendants of the context node
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example20.html" target="mainWindow">Example 20</a><br>The ancestor-or-self axis contains the context node and the ancestors of the context node; thus, the ancestor-or-self axis
+               will always include the root node.
+               
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example21.html" target="mainWindow">Example 21</a><br> The ancestor, descendant, following, preceding and self axes partition a document (ignoring
+               attribute and namespace nodes): they do not overlap and together they contain all the nodes in the document.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example22.html" target="mainWindow">Example 22</a><br>The div operator performs floating-point division, the mod operator returns the remainder from a truncating division. The
+               floor function returns the largest (closest to positive infinity) number that is not greater than the argument and that is
+               an integer.The ceiling function returns the smallest (closest to negative infinity) number that is not less than the argument
+               and that is an integer. 
+               
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

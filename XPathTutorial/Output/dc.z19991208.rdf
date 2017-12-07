@@ -1,0 +1,15 @@
+
+
+<!DOCTYPE rdf:RDF
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://dublincore.org/documents/2000/11/dcmes-xml/dcmes-xml-dtd.dtd">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/1999/xhtml">
+   <rdf:Description rdf:about="http://www.zvon.org/xxl/XPathTutorial/General/examples.html">
+      <dc:Title xmlns:dc="http://purl.org/dc/elements/1.1/">XPath Tutorial</dc:Title>
+      <dc:Date xmlns:dc="http://purl.org/dc/elements/1.1/"/>
+      <dc:Creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nic, Miloslav</dc:Creator>
+      <dc:Creator xmlns:dc="http://purl.org/dc/elements/1.1/">Jirat, Jiri</dc:Creator>
+      <dc:Format xmlns:dc="http://purl.org/dc/elements/1.1/">text/html</dc:Format>
+      <dc:Language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:Language>
+      <dc:Publisher xmlns:dc="http://purl.org/dc/elements/1.1/">ZVON project</dc:Publisher>
+   </rdf:Description>
+</rdf:RDF>

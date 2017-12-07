@@ -1,0 +1,55 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>//</key>
+	<description lang="ita">Se il path inizia con // allora vengono selezionati tutti gli elementi del documento che soddisfano i criteri successivi.</description>
+	<description lang="eng">If the path starts with // then all elements in the document which fulfill following criteria are selected.</description>
+	<description lang="ger">Falls der Pfad mit // beginnt, werden alle Elemente ausgewählt, welche die folgenden Kriterien erfüllen.</description>
+	<description lang="cze">
+Pokud výraz začíná // (dvěma lomítky), pak jsou vybrány všechny
+elementy kdekoli v dokumentu, které splňují následující kritéria
+</description>
+	<description lang="fre">
+Si le chemin commence par '//', alors tous les éléments du document qui correspondent au critère qui suit sont sélectionnés.
+</description>
+	<description lang="dut">Als het path begint met // dan zullen alle elementen van het document die overeenkomen met de erna volgende criteria geselecteerd worden.</description>
+	<description lang="spa">Cuando el camino se inicia con '//' todos los elementos
+   en el documento que cumplen con el criterio que sigue son seleccionados.</description>
+	<description lang="rus">Если путь начинается с //, то будут выбраны все элементы документа, которые соответствуют указанному шаблону.</description>
+	<description lang="chi">如果路径以双斜线 // 开头, 则表示选择文档中所有满足双斜线//之后规则的元素(无论层级关系)</description>
+	<source>
+		<AAA>
+			<BBB/>
+			<CCC/>
+			<BBB/>
+			<DDD>
+				<BBB/>
+			</DDD>
+			<CCC>
+				<DDD>
+					<BBB/>
+					<BBB/>
+				</DDD>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="//BBB">
+		<p lang="ita">Selezione di tutti gli elementi BBB</p>
+		<p lang="eng">Select all elements BBB</p>
+		<p lang="ger">Wähle alle BBB Elemente aus</p>
+		<p lang="cze">Vyber všechny elementy BBB</p>
+		<p lang="fre">Sélectionne tous les éléments BBB</p>
+		<p lang="spa">Selecciona todos los elementos BBB</p>
+		<p lang="rus">Будут выбраны все элементы BBB</p>
+		<p lang="chi">选择所有BBB元素</p>
+	</example>
+	<example path="//DDD/BBB">
+	        <p lang="ita">Selezione di tutti gli elementi BBB che sono figli di DDD</p>
+		<p lang="eng">Select all elements BBB which are children of DDD</p>
+		<p lang="ger">Wähle alle BBB Elemente aus, die Kinder von DDD sind</p>
+		<p lang="cze">Vyber všechny elementy BBB, které jsou přímými potomky DDD</p>
+		<p lang="fre">Sélectionne tous les éléments BBB qu sont enfants de DDD</p>
+		<p lang="dut">Selecteert alle BBB elementen die kind zijn van DDD</p>
+		<p lang="spa">Selecciona todos los elementos BBB que son hijos de DDD</p>
+		<p lang="rus">Будут выбраны все элементы BBB, являющиеся детьми DDD</p>
+		<p lang="chi">选择所有父元素是DDD的BBB元素</p>
+	</example>
+</XPathTutorial>

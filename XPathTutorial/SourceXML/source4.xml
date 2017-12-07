@@ -1,0 +1,52 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>last()</key>
+	<key>position()</key>
+	<description lang="ita">Le espressioni all'interno di parentesi quadre consentono di specificare ulteriormente la locazione di un elemento. Un valore numerico all'interno delle parentesi quadre consente di specificare la posizione di un elemento all'interno dell'insieme selezionato. La funzione last() seleziona l'ultimo elemento dell'insieme.</description>
+	<description lang="eng">Expresion in square brackets can further specify an element. A number in the brackets gives the position of the element in the selected set. The function last() selects the last element in the selection.</description>
+	<description lang="ger">Ausdrücke in eckigen Klammern können weiterhin ein Element spezifizieren. Eine Zahl in eckigen Klammern gibt die Position eines Elements in einer ausgewählten Menge an. Die Funktion last() wählt das letzte Element einer ausgewählten Menge aus.</description>
+	<description lang="cze">
+Výraz v hranatých závorkách může specifikovat další podmínky.
+Číslo v hranatých závorkách určuje pozici elementu ve vybraném
+souboru elementů.
+Funkce "last()" ("poslední") vybírá poslední element ve výběru.</description>
+	<description lang="fre">
+Une expression entre crochets peut spécifier plus précisément un élément.  Un nombre entre crochets donne la position d'un élément dans le jeu sélectionné. La fonction last sélectionne le dernier élément du jeu
+</description>
+	<description lang="dut">Een beschrijving tussen vierkante haken kan een element meer specifïen. Een nummer tussen de haken geeft de positie van het element aan in het geselecteerde path. De functie last() selecteert het laatste element van de selectie.</description>
+	<description lang="spa">Una expresión entre corchetes permite precisar la 
+   especificación de un elemento. Un número dentro de los corchetes representa 
+   la posición del elemento en el conjunto seleccionado. La función last() 
+   selecciona el último elemento en la selección.</description>
+	<description lang="rus">Выражение в квадратных скобках позволяет задавать более четкие критерии для элемента. Так число в квадратных скобках обозначает позицию элемента в выбранном множестве. Функция last() позволяет указать последний элемент в выборке.</description>
+	<description lang="chi">方块号里的表达式可以进一步的指定元素, 其中数字表示元素在选择集里的位置, 而last()函数则表示选择集中的最后一个元素.</description>
+	<source>
+		<AAA>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+		</AAA>
+	</source>
+	<example path="/AAA/BBB[1]">
+	        <p lang="ita">Selezione del primo figlio BBB dell'elemento AAA</p>
+		<p lang="eng">Select the first BBB child of element AAA</p>
+		<p lang="ger">Wähle das erste BBB Kind des AAA Elements aus</p>
+		<p lang="cze">Vyber prvního přímého potomka BBB elementu AAA</p>
+		<p lang="fre">Sélectionne le premier élément BBB, fils de l'élément racine AAA</p>
+		<p lang="dut">Selecteert het eerste BBB kind van het AAA element</p>
+		<p lang="spa">Selecciona el primer hijo BBB del elemento AAA</p>
+		<p lang="rus">Будет выбран первый потомок BBB элемента AAA</p>
+		<p lang="chi">选择AAA的第一个BBB子元素</p>
+	</example>
+	<example path="/AAA/BBB[last()]">
+	        <p lang="ita">Selezione dell'ultimo figlio BBB dell'elemento AAA</p>
+		<p lang="eng">Select the last BBB child of element AAA</p>
+		<p lang="ger">Wähle das letzte BBB Kind des AAA Elements aus</p>
+		<p lang="cze">Vyber posledního přímého potomka BBB elementu AAA</p>
+		<p lang="fre">Sélectionne le dernier élément BBB, fils de l'élément racine AAA</p>
+		<p lang="dut">Selecteert het laatste BBB kind van het AAA element</p>
+		<p lang="spa">Selecciona el último hijo BBB del elemento AAA</p>
+		<p lang="rus">Будет выбран последний потомок BBB элемента AAA</p>
+		<p lang="chi">选择AAA的最后一个BBB子元素</p>
+	</example>
+</XPathTutorial>

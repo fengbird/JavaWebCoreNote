@@ -1,0 +1,35 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>XPath 教程</title><script type="text/javascript"><!--
+      function framesLoaded() {
+         var param = framesLoaded.arguments;
+         var beginOfCommand;
+         var tmp;
+      
+         if (param.length == 0) {                              // onload call
+            beginOfCommand = location.href.indexOf('?');
+            tmp = location.href;
+         } else if (param.length == 1) {               // call from "_upbar.html"
+            beginOfCommand = param[0].indexOf('?');
+            tmp = param[0];
+         }
+      
+         if (beginOfCommand != -1) {
+            var command = tmp.substring(beginOfCommand+1);
+            var parts = command.split('&');
+            if (parts.length == 3) {                    // 3 parameters => do not add '.html'
+               var file1 = parts[0];
+               var file2 = parts[1];
+            } else if (parts.length == 2) {             // only 2 parameters => add '.html'
+               var file1 = parts[0] + '.html';
+               var file2 = parts[1] + '.html';
+            }
+            parent.mainIndex.location = file1;
+            parent.mainWindow.location = file2;
+         }
+      }
+      --></script></head><frameset rows="40,*" onload="framesLoaded()"><frame name="upbar" src="../Output/_upbar.html" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"/><frameset cols="250,*">
+			<frame name="mainIndex" src="../Output/examples.html"/>
+			<frame name="mainWindow" src="../Output/introduction.html"/>
+		</frameset></frameset></html>

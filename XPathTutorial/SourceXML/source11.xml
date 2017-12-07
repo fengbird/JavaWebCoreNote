@@ -1,0 +1,81 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>child::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse child contiene i nodi figli del nodo contestuale. Tale asse &#xE8; quello di default e pu&#xF2; essere omesso.</description>
+	<description lang="eng">The child axis contains the children of the context node. The child axis is the default axis and it can be omitted.  </description>
+	<description lang="ger">Die "child"-Achse enthält die Kinder des Kontextknotens. Die "child"-Achse ist die Standardachse und kann daher weggelassen werden.</description>
+	<description lang="cze">
+Osa přímých potomků (child axis) obsahuje všechny přímé potomky
+uzlu, který je v kontextu. Tato osa je implicitní a může být
+vynechána.</description>
+	<description lang="fre">
+L'axe enfant contient les enfants du noeud contextuel. L'axe enfant est celui par défaut et il peut être omis
+</description>
+	<description lang="dut">De child spil bevat de kinderen van de context geleding. De kind spil is de standaard spil en kan weg gelaten worden.</description>
+	<description lang="spa">El eje 'child' contiene a los hijos del nodo del contexto. 
+   El eje 'child' es el seleccionado por defecto y puede ser omitido.  </description>
+	<description lang="rus">Ось child содержит дочерние элементы контекстного узла. Ось child является осью, применяемой по умолчанию, и может быть опущена.</description>
+	<description lang="chi">child轴(axis)包含上下文节点的子元素, 作为默认的轴,可以忽略不写. </description>
+	<source>
+		<AAA>
+			<BBB/>
+			<CCC/>
+		</AAA>
+	</source>
+	<example path="/AAA">
+	        <p lang="ita">Equivalente a /child::AAA</p>
+		<p lang="eng">Equivalent of /child::AAA</p>
+		<p lang="ger">Entspricht /child::AAA</p>
+		<p lang="cze">Ekvivalent k /child::AAA</p>
+		<p lang="fre">Equivalent à /child::AAA</p>
+		<p lang="dut">Is hetzelfde als /child::AAA</p>
+		<p lang="spa">Equivalente a /child::AAA</p>
+		<p lang="rus">Эквивалентно выражению /child::AAA</p>
+		<p lang="chi">等价于 /child::AAA</p>		
+	</example>
+	<example path="/child::AAA">
+	        <p lang="ita">Equivalente a /AAA</p>
+		<p lang="eng">Equivalent of /AAA</p>
+		<p lang="ger">Entspricht /AAA</p>
+		<p lang="cze">Ekvivalent k /AAA</p>
+		<p lang="fre">Equivalent à /AAA</p>
+		<p lang="dut">Is hetzelde als /AAA</p>
+		<p lang="spa">Equivalente a /AAA</p>
+		<p lang="rus">Эквивалентно выражению /AAA</p>
+		<p lang="chi">等价于/AAA</p>
+	</example>
+	<example path="/AAA/BBB">
+	        <p lang="ita">Equivalente a /child::AAA/child::BBB</p>
+		<p lang="eng">Equivalent of /child::AAA/child::BBB</p>
+		<p lang="ger">Entspricht /child::AAA/child::BBB</p>
+		<p lang="cze">Ekvivalent k /child::AAA/child::BBB</p>
+		<p lang="fre">Equivalent à /child::AAA/child::BBB</p>
+		<p lang="dut">Is hetzelfde als /child::AAA/child::BBB</p>
+		<p lang="spa">Equivalente a /child::AAA/child::BBB</p>
+		<p lang="rus">Эквивалентно /child::AAA/child::BBB</p>
+		<p lang="chi">等价于/child::AAA/child::BBB</p>
+	</example>
+	<example path="/child::AAA/child::BBB">
+	        <p lang="ita">Equivalente a /AAA/BBB</p>
+		<p lang="eng">Equivalent of /AAA/BBB</p>
+		<p lang="ger">Entspricht /AAA/BBB</p>
+		<p lang="cze">Ekvivalent k /AAA/BBB</p>
+		<p lang="fre">Equivalent à /AAA/BBB</p>
+		<p lang="dut">Is hetzelfde als /AAA/BBB</p>
+		<p lang="spa">El equivalente de /AAA/BBB</p>
+		<p lang="rus">Эквивалентно /AAA/BBB</p>
+		<p lang="chi">等价于/AAA/BBB</p>
+	</example>
+	<example path="/child::AAA/BBB">
+	        <p lang="ita">Entrambe le possibilit&#xE0; possono essere combinate.</p>
+		<p lang="eng">Both possibilities can be combined</p>
+		<p lang="ger">Beide Möglichkeiten können kombiniert werde</p>
+		<p lang="cze">Obě možnosti mohou být kombinovány</p>
+		<p lang="fre">Les deux possiblilités peuvent être combinées</p>
+		<p lang="dut">De mogelijkheden mogen gecombineerd worden</p>
+		<p lang="spa">Ambas formas (haciendo explícito el eje 'child' o no)
+      pueden ser combinadas</p>
+		<p lang="rus">Оба варианта можно использовать одновременно</p>
+		<p lang="chi">二者都可以被合并</p>
+	</example>
+</XPathTutorial>

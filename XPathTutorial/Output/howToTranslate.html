@@ -1,0 +1,101 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>How to translate:</title><link rel="stylesheet" type="text/css" href="/CSS/style.css"/></head><body><div style="text-align:center"><br/><div><script type="text/javascript"><!--
+google_ad_client = "pub-9037072068668250";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_color_border = "A8DDA0";
+google_color_bg = "EBFFED";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "6F6F6F";
+
+//--></script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"><!--
+    Dummy
+  -->
+  
+</script></div><br/></div><table width="100%"><tr><td style="text-align:right"><span class="mediumText"><a class="naviBlack" target="_top" href="http://www.zvon.org">ZVON</a>
+		&gt;
+		<a class="naviBlack" target="_top" href="http://www.zvon.org/index.php?nav_id=tutorials">Tutorials</a>
+		&gt;
+		<b>XPath Tutorial</b></span></td></tr></table><table class="bar" width="750px" border="0" cellpadding="0" cellspacing="0"><tr><td class="naviBlue"><a class="naviWhite" target="_top" href="../General/examples.html">Intro</a> 
+	/
+	  <a class="naviWhite" target="_top" href="http://zvon.org/search.php">Search</a> 
+	/
+	<a class="naviWhite" target="_top" href="http://www.zvon.org"> ZVON </a></td></tr></table><h3>Miloslav Nic [ <a href="mailto:nicmila@systinet.com">nicmila@systinet.com</a> ]</h3><h3>Jiri Jirat [ <a href="mailto:Jiri.Jirat@systinet.com">Jiri.Jirat@systinet.com</a> ]</h3><h1>How to translate XPath Tutorial</h1><p>
+	Translation is easy - just a few paragraphs in XML file.
+        If you would like to contribute, 
+        send email to 
+	<a href="mailto:webmaster@zvon.org?Subject=XPath Tutorial&amp;Body=I would like to translate XPath Tutorial">webmaster@zvon.org</a>
+        and we will send you the XML files and detailed instructions.
+      </p><p>
+	Here is sample source file:
+      </p><hr/><p><br/>&lt;XPathTutorial creator = "nicmila@systinet.com"&gt;
+	<br/>     &lt;key&gt;absolute path&lt;/key&gt;
+	<br/>     &lt;description lang = "<b style="color: ">ita</b>"&gt;<i style="color: ">La sintassi XPath di base è simile al sistema di indirizzamento utilizzato all'interno di un filesystem. Se il path inizia con lo slash /, esso rappresenta un percorso assoluto verso l'elemento richiesto.</i>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: ">eng</b>"&gt;<b>The basic XPath syntax is similar to filesystem addressing. If the path starts with the slash / , then it represents an absolute path to the required element.</b>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: ">ger</b>"&gt;<i style="color: ">Die grundlegende XPath Syntax ist der Adressierung des Dateisystems ähnlich. Falls der Pfad mit einem Schrägstrich / beginnt, repräsentiert es einen absoluten Pfad zum benötigten Element.</i>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: blue">cze</b>"&gt;<i style="color: blue">
+Základní syntax jazyka XPath je podobný adresování v souborovém
+systému (filesystem).
+Pokud výraz začíná lomítkem (slash) / , 
+pak reprezentuje absolutní cestu k požadovanému elementu.
+</i>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: brown">fre</b>"&gt;<i style="color: brown">La base de la syntaxe XPATH est semblable à celle de l'adressage du système de fichiers. Si le chemin commence par '/', alors il représente un chemin absolu vers l'élément requis. </i>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: navy">dut</b>"&gt;<i style="color: navy">De basis XPath schrijfwijze kan je vergelijken met het addresseren van bestanden door het besturingssysteem. Als het path begint met een schuine streep, /, dan stelt het een absoluut path voor bij het verplichte element</i>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: green">spa</b>"&gt;<i style="color: green">La sintaxis básica de XPath es similar a la del 
+   direccionamiento de ficheros. Un camino que se inicia con '/', 
+   representa un camino absoluto hacia el elemento requerido.</i>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: maroon">rus</b>"&gt;<i style="color: maroon">Базовый синтаксис языка XPath похож на адресацию в файловой системе. Если путь начинается  с символа '/', то он представляет абсолютный путь к заданному элементу.</i>&lt;/description&gt;
+	<br/>     &lt;description lang = "<b style="color: ">chi</b>"&gt;<i style="color: ">基本的XPath语法类似于在一个文件系统中定位文件,如果路径以斜线 / 开始, 那么该路径就表示到一个元素的绝对路径</i>&lt;/description&gt;
+	<br/>     &lt;source&gt;
+		<br/>          &lt;AAA&gt;
+			<br/>               &lt;BBB/&gt;
+			<br/>               &lt;CCC/&gt;
+			<br/>               &lt;BBB/&gt;
+			<br/>               &lt;BBB/&gt;
+			<br/>               &lt;DDD&gt;
+				<br/>                    &lt;BBB/&gt;
+			<br/>               &lt;/DDD&gt;
+			<br/>               &lt;CCC/&gt;
+		<br/>          &lt;/AAA&gt;
+	<br/>     &lt;/source&gt;
+	<br/>     &lt;example path = "/AAA"&gt;
+	        <br/>          &lt;p lang = "<b style="color: ">ita</b>"&gt;<i style="color: ">Selezione dell'elemento radice AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">eng</b>"&gt;<b>Select the root element AAA</b>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">ger</b>"&gt;<i style="color: ">Wähle das Wurzelelement AAA aus</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: blue">cze</b>"&gt;<i style="color: blue">Vyber kořenový element AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: brown">fre</b>"&gt;<i style="color: brown">Sélectionne l'élément racine AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: navy">dut</b>"&gt;<i style="color: navy">Selecteert het basis element AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: green">spa</b>"&gt;<i style="color: green">Selecciona el elemento raiz AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: maroon">rus</b>"&gt;<i style="color: maroon">Выбирается корневой узел AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">chi</b>"&gt;<i style="color: ">选择根元素AAA</i>&lt;/p&gt;
+	<br/>     &lt;/example&gt;
+	<br/>     &lt;example path = "/AAA/CCC"&gt;
+	        <br/>          &lt;p lang = "<b style="color: ">ita</b>"&gt;<i style="color: ">Selezione di tutti gli elementi CCC che sono figli dell'elemento radice AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">eng</b>"&gt;<b>Select all elements CCC which are children of the root element AAA</b>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">ger</b>"&gt;<i style="color: ">Wähle alle CCC Elemente aus, die Kinder des Wurzelelements AAA sind</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: blue">cze</b>"&gt;<i style="color: blue">Vyber všechny elementy CCC, které jsou přímými potomky kořenového elementu AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: brown">fre</b>"&gt;<i style="color: brown">Sélectionne tous les éléments CCC qui sont enfants de l'élément racine AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: navy">dut</b>"&gt;<i style="color: navy">Selecteert alle CCC elementen die kind zijn van het basis element AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: green">spa</b>"&gt;<i style="color: green">Selecciona todos los elementos CCC que son hijos del elemento raiz AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: maroon">rus</b>"&gt;<i style="color: maroon">Выбираются все элементы CCC, являющиеся дочерними по отношению к корневому узлу AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">chi</b>"&gt;<i style="color: ">选择AAA的所有CCC子元素</i>&lt;/p&gt;
+	<br/>     &lt;/example&gt;
+	<br/>     &lt;example path = "/AAA/DDD/BBB"&gt;
+	        <br/>          &lt;p lang = "<b style="color: ">ita</b>"&gt;<i style="color: ">Selezione di tutti gli elementi BBB che sono figli di DDD, a loro volta figli dell'elemento radice AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">eng</b>"&gt;<b>Select all elements BBB which are children of DDD which are children of the root element AAA</b>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">ger</b>"&gt;<i style="color: ">Wähle alle BBB Elemente aus, die Kinder von DDD sind, die ihrerseits Kinder des Wurzelelements AAA sind</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: blue">cze</b>"&gt;<i style="color: blue">Vyber všechny elementy BBB, které jsou přímými potomky elementů
+DDD, 
+které jsou přímými potomky kořenového elemntu AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: brown">fre</b>"&gt;<i style="color: brown">Sélectionne tous les éléments BBB qui sont enfants de DDD, qui sont enfants de l'élément racine AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: navy">dut</b>"&gt;<i style="color: navy">Selecteert alle BBB elementen die kind zijn van de DDD elementen die op hun beurt kind zijn van het basis element AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: green">spa</b>"&gt;<i style="color: green">Selecciona todos los elementos BBB que son hijos de DDD, 
+      que a su vez son hijos del elemento raiz AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: maroon">rus</b>"&gt;<i style="color: maroon">Выбираются все элементы BBB, являющиеся детьми элементов DDD, которые в свою очередь являются детьми корневого узла AAA</i>&lt;/p&gt;
+		<br/>          &lt;p lang = "<b style="color: ">chi</b>"&gt;<i style="color: ">选择AAA的子元素DDD的所有子元素</i>&lt;/p&gt;
+	<br/>     &lt;/example&gt;
+<br/>&lt;/XPathTutorial&gt;</p><hr/></body></html>

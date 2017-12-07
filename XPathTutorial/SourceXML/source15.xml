@@ -1,0 +1,47 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>following-sibling::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse following-sibling contiene tutti i successivi nodi-fratello del nodo contestuale.</description>
+	<description lang="eng">The following-sibling axis contains all the following siblings of the context node.</description>
+	<description lang="ger">Die "following-sibling" Achse enthält alle folgenden Geschwister des Kontextknotens.</description>
+	<description lang="cze">
+Osa "following-sibling" obsahuje všechny následující sourozence
+uzlu, který je v kontextu.
+</description>
+	<description lang="fre">
+l'axe 'following-sibling' contient tous les noeuds frères qui suivent le noeud contextuel.
+</description>
+	<description lang="dut">De following-sibling spil bevat alle volgende afstammelingen van de context geleding.</description>
+	<description lang="spa">El eje 'following-sibling' contiene todos los nodos 
+   hermanos que siguen el nodo del contexto.</description>
+	<description lang="rus">Ось following-sibling содержит все следующих братьев контекстного узла. Братьями называются те узлы, что имеют одного родителя с контекстным.</description>
+	<description lang="chi">following-sibling轴(axis)包含上下文节点之后的所有兄弟节点</description>
+	<source>
+		<AAA>
+			<BBB>
+				<CCC/>
+				<DDD/>
+			</BBB>
+			<XXX>
+				<DDD>
+					<EEE/>
+					<DDD/>
+					<CCC/>
+					<FFF/>
+					<FFF>
+						<GGG/>
+					</FFF>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD/>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/BBB/following-sibling::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//CCC/following-sibling::*">
+		<p lang="rus"/>
+	</example>
+</XPathTutorial>

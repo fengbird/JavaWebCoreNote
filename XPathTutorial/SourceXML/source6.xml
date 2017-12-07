@@ -1,0 +1,64 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>normalize-space()</key>
+	<key>attributes</key>
+	<key>@</key>
+	<description lang="ita">I valori degli attributi possono essere utilizzati come criteri di selezione. La funzione normalize-space() rimuove gli spazi precedenti e successivi e sostituisce con un singolo spazio sequenze di caratteri di spaziatura.</description>
+	<description lang="eng">Values of attributes can be used as selection criteria. Function normalize-space removes leading and trailing spaces and replaces sequences of whitespace characters by a single space.</description>
+	<description lang="ger">Attributwerte können als Auswahlkriterien verwendet werden. Die Funktion "normalize-space()" entfernt voranstehende und nachkommende Leerzeichen und ersetzt Leerzeichenfolgen durch ein einfaches Leerzeichen.</description>
+	<description lang="cze">
+Hodnoty atributů mohou být použity jako kritérium pro výběr.
+Funkce "normalize-space" odstraňuje počáteční a koncové mezery
+a nahrazuje sekvence "whitespace" znaků jedinou mezerou.</description>
+	<description lang="fre">
+Les valeurs d'attributs peuvent être utilisées comme critère de sélection. La fonction normalize-space supprime les espaces de début et de fin puis remplace les séquences d'espaces blancs par un seul espace.
+</description>
+	<description lang="dut">Attribuutwaarden kunnen gebruikt worden als selectie criteria. De functie normalize-space verwijdert voorloop spaties en vervangt spatie reeksen met een enkele spatie.</description>
+	<description lang="spa">Los valores de los atributos pueden ser utilizados 
+   como criterio de selección. La función 'normalize-space' elimina los espacios 
+   al principio y al final, así como tambien remplaza las secuencias de blancos 
+   por un solo espacio.</description>
+	<description lang="rus">Значения атрибутов могут служить критерием при выборке. Функция normalize-space() удаляет пробелы в начале и конце параметра, а все последовательности пробельных символов заменяет одиночным пробелом.</description>
+	<description lang="chi">属性的值可以被用来作为选择的准则, normalize-space函数删除了前部和尾部的空格, 并且把连续的空格串替换为一个单一的空格</description>
+	<source>
+		<AAA>
+			<BBB id="b1"/>
+			<BBB name=" bbb "/>
+			<BBB name="bbb"/>
+		</AAA>
+	</source>
+	<example path="//BBB[@id='b1']">
+	        <p lang="ita">Selezione degli elementi BBB per i quali l'attributo id ha valore b1.</p>
+		<p lang="eng">Select BBB elements which have attribute id with value b1</p>
+		<p lang="ger">Wähle alle BBB Elemente aus, die ein Attribut "id" mit dem Wert "b1" haben</p>
+		<p lang="cze">Vyber elementy BBB, jejichž atribut "id" má hodnotu "b1"</p>
+		<p lang="fre">Sélectionne tous les éléments BBB ayant un attribut id dont la valeur est b1</p>
+		<p lang="dut">Selecteert de BBB elementen die het attribuut id bevatten en b1 als attribuutwaarde hebben</p>
+		<p lang="spa">Selecciona los elementos BBB cuyo atributo 'id' tiene por valor 'b1'</p>
+		<p lang="rus">Выбираются элементы BBB, имеющие атрибут id со значением b1</p>
+		<p lang="chi">选择含有属性id且其值为'b1'的BBB元素</p>
+	</example>
+	<example path="//BBB[@name='bbb']">
+                <p lang="ita">Selezione degli elementi BBB per i quali l'attributo name ha valore bbb.</p>
+		<p lang="eng">Select BBB elements which have attribute name with value 'bbb'</p>
+		<p lang="ger">Wähle alle BBB Elemente aus, die ein Attribut "name" mit dem Wert "bbb" haben</p>
+		<p lang="cze">Vyber elementy BBB, jejichž atribut "name" má hodnotu "bbb"</p>
+		<p lang="fre">Sélectionne tous les éléments BBB ayant un attribut name dont la valeur est bbb</p>
+		<p lang="dut">Selecteert de BBB elementen die het attribuut name bevatten en als attribuutwaarde bbb hebben</p>
+		<p lang="spa">Selecciona los elementos BBB cuyo atributo 'name' tiene por valor 'bbb'</p>
+		<p lang="rus">Выбираются элементы BBB, имеющие атрибут name со значением 'bbb'</p>
+		<p lang="chi">选择含有属性name且其值为'bbb'的BBB元素</p>
+	</example>
+	<example path="//BBB[normalize-space(@name)='bbb']">
+	        <p lang="ita">Selezione degli elementi BBB per i quali l'attributo name ha valore bbb: spazi precedenti e successivi vengono rimossi prima del confronto.</p>
+		<p lang="eng">Select BBB elements which have attribute name with value bbb, leading and trailing spaces are removed before comparison</p>
+		<p lang="ger">Wähle die BBB Elemente aus, die ein Attribut "name" mit dem Wert "bbb" haben. Voranstehende und nachkommende Leerzeichen werden vor dem Vergleich entfernt</p>
+		<p lang="cze">
+Vyber elementy BBB, které mají atribut "name" s hodnotou "bbb", přičemž
+koncové a počáteční mezery jsou před porovnáním odstraněny.</p>
+		<p lang="fre">Sélectionne tous les éléments BBB ayant un attribut name dont la valeur est bbb. Les espaces de début de de fin sont supprimés avant la comparaison</p>
+		<p lang="dut">Selecteert de BBB elementen die het name attribuut bevatten met de waarde bbb na alle voorloop spaties verijdert te hebben</p>
+		<p lang="spa">Selecciona los elementos BBB cuyo atributo 'name' tiene por valor 'bbb' una vez eliminados los espacios al principio y al final</p>
+		<p lang="rus">Выбираются элементы BBB, имеющие атрибут name со значением, которое после нормализации будет идентично bbb</p>
+		<p lang="chi">选择含有属性name且其值(在用normalize-space函数去掉前后空格后)为'bbb'的BBB元素</p>
+	</example>
+</XPathTutorial>

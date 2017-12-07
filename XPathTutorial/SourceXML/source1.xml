@@ -1,0 +1,67 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>absolute path</key>
+	<description lang="ita">La sintassi XPath di base &#xE8; simile al sistema di indirizzamento utilizzato all'interno di un filesystem. Se il path inizia con lo slash /, esso rappresenta un percorso assoluto verso l'elemento richiesto.</description>
+	<description lang="eng">The basic XPath syntax is similar to filesystem addressing. If the path starts with the slash / , then it represents an absolute path to the required element.</description>
+	<description lang="ger">Die grundlegende XPath Syntax ist der Adressierung des Dateisystems ähnlich. Falls der Pfad mit einem Schrägstrich / beginnt, repräsentiert es einen absoluten Pfad zum benötigten Element.</description>
+	<description lang="cze">
+Základní syntax jazyka XPath je podobný adresování v souborovém
+systému (filesystem).
+Pokud výraz začíná lomítkem (slash) / , 
+pak reprezentuje absolutní cestu k požadovanému elementu.
+</description>
+	<description lang="fre">La base de la syntaxe XPATH est semblable à celle de l'adressage du système de fichiers. Si le chemin commence par '/', alors il représente un chemin absolu vers l'élément requis. </description>
+	<description lang="dut">De basis XPath schrijfwijze kan je vergelijken met het addresseren van bestanden door het besturingssysteem. Als het path begint met een schuine streep, /, dan stelt het een absoluut path voor bij het verplichte element</description>
+	<description lang="spa">La sintaxis básica de XPath es similar a la del 
+   direccionamiento de ficheros. Un camino que se inicia con '/', 
+   representa un camino absoluto hacia el elemento requerido.</description>
+	<description lang="rus">Базовый синтаксис языка XPath похож на адресацию в файловой системе. Если путь начинается  с символа '/', то он представляет абсолютный путь к заданному элементу.</description>
+	<description lang="chi">基本的XPath语法类似于在一个文件系统中定位文件,如果路径以斜线 / 开始, 那么该路径就表示到一个元素的绝对路径</description>
+	<source>
+		<AAA>
+			<BBB/>
+			<CCC/>
+			<BBB/>
+			<BBB/>
+			<DDD>
+				<BBB/>
+			</DDD>
+			<CCC/>
+		</AAA>
+	</source>
+	<example path="/AAA">
+	        <p lang="ita">Selezione dell'elemento radice AAA</p>
+		<p lang="eng">Select the root element AAA</p>
+		<p lang="ger">Wähle das Wurzelelement AAA aus</p>
+		<p lang="cze">Vyber kořenový element AAA</p>
+		<p lang="fre">Sélectionne l'élément racine AAA</p>
+		<p lang="dut">Selecteert het basis element AAA</p>
+		<p lang="spa">Selecciona el elemento raiz AAA</p>
+		<p lang="rus">Выбирается корневой узел AAA</p>
+		<p lang="chi">选择根元素AAA</p>
+	</example>
+	<example path="/AAA/CCC">
+	        <p lang="ita">Selezione di tutti gli elementi CCC che sono figli dell'elemento radice AAA</p>
+		<p lang="eng">Select all elements CCC which are children of the root element AAA</p>
+		<p lang="ger">Wähle alle CCC Elemente aus, die Kinder des Wurzelelements AAA sind</p>
+		<p lang="cze">Vyber všechny elementy CCC, které jsou přímými potomky kořenového elementu AAA</p>
+		<p lang="fre">Sélectionne tous les éléments CCC qui sont enfants de l'élément racine AAA</p>
+		<p lang="dut">Selecteert alle CCC elementen die kind zijn van het basis element AAA</p>
+		<p lang="spa">Selecciona todos los elementos CCC que son hijos del elemento raiz AAA</p>
+		<p lang="rus">Выбираются все элементы CCC, являющиеся дочерними по отношению к корневому узлу AAA</p>
+		<p lang="chi">选择AAA的所有CCC子元素</p>
+	</example>
+	<example path="/AAA/DDD/BBB">
+	        <p lang="ita">Selezione di tutti gli elementi BBB che sono figli di DDD, a loro volta figli dell'elemento radice AAA</p>
+		<p lang="eng">Select all elements BBB which are children of DDD which are children of the root element AAA</p>
+		<p lang="ger">Wähle alle BBB Elemente aus, die Kinder von DDD sind, die ihrerseits Kinder des Wurzelelements AAA sind</p>
+		<p lang="cze">Vyber všechny elementy BBB, které jsou přímými potomky elementů
+DDD, 
+které jsou přímými potomky kořenového elemntu AAA</p>
+		<p lang="fre">Sélectionne tous les éléments BBB qui sont enfants de DDD, qui sont enfants de l'élément racine AAA</p>
+		<p lang="dut">Selecteert alle BBB elementen die kind zijn van de DDD elementen die op hun beurt kind zijn van het basis element AAA</p>
+		<p lang="spa">Selecciona todos los elementos BBB que son hijos de DDD, 
+      que a su vez son hijos del elemento raiz AAA</p>
+		<p lang="rus">Выбираются все элементы BBB, являющиеся детьми элементов DDD, которые в свою очередь являются детьми корневого узла AAA</p>
+		<p lang="chi">选择AAA的子元素DDD的所有子元素</p>
+	</example>
+</XPathTutorial>

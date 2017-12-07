@@ -1,0 +1,52 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>ancestor-or-self::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse ancestor-or-self contiene il nodo contesuale e i suoi progenitori: dunque, l'asse ancestor-or-self includer&#xE0; sempre il nodo radice.</description>
+	<description lang="eng">The ancestor-or-self axis contains the context node and the ancestors of the context node; thus, the ancestor-or-self axis will always include the root node.
+</description>
+	<description lang="ger">Die "ancestor-or-self" Achse enthält den Kontextknoten und die Vorfahren des Knotextknotens. Somit enthält die "ancestor-or-self" Achse immer den Wurzelknoten.</description>
+	<description lang="cze">
+Osa "ancestor-or-self" obsahuje kontextový uzel a všechny jeho předky.
+Proto bude vždy obsahovat kořen dokumentu.
+</description>
+	<description lang="fre">
+L'axe ancestor-or-self contient le noeud contextuel et ses ancêtres; ainsi l'axe ancestor-or-self contient toujours le noeud racine
+</description>
+	<description lang="dut">De ancestor-or-self spil bevat de context geleding en zijn ouders zodoende dat de ouder spil altijd de basis geleding bevat.</description>
+	<description lang="spa">El eje 'ancestor-or-self' contiene el nodo del 
+   contexto así como sus ancestros; El eje 'ancestor-or-self' contiene el nodo 
+   raiz salvo en el caso donde el patron que precede al eje no especifique 
+   ningún nodo del documento.</description>
+	<description lang="rus">Ось ancestor-or-self содержит контекстный узел и всех его предков; таким образом, эта ось всегда содержит корневой узел.</description>
+	<description lang="chi"> ancestor-or-self 轴(axis)包含上下文节点本身和该节点的祖先节点</description>
+	<source>
+		<AAA>
+			<BBB>
+				<CCC/>
+				<ZZZ>
+					<DDD/>
+				</ZZZ>
+			</BBB>
+			<XXX>
+				<DDD>
+					<EEE/>
+					<DDD/>
+					<CCC/>
+					<FFF/>
+					<FFF>
+						<GGG/>
+					</FFF>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD/>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/XXX/DDD/EEE/ancestor-or-self::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//GGG/ancestor-or-self::*">
+		<p lang="rus"/>
+	</example>
+</XPathTutorial>

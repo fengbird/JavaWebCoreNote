@@ -1,0 +1,127 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <link rel="stylesheet" type="text/css" href="../CSS/tutorial.css">
+      <title>XPath Tutorial</title>
+   </head>
+   <body>
+      <table xmlns="http://www.w3.org/1999/xhtml" width="100%">
+         <tr>
+            <td><span class="mediumText"><a class="naviBlack" target="_self" href="../Output/examples.html">English</a> | <a class="naviBlack" target="_self" href="../Output_cze/examples.html">česky</a> | <a class="naviBlack" target="_self" href="../Output_dut/examples.html">Nederlands</a> | <a class="naviBlack" target="_self" href="../Output_fre/examples.html">Fran&ccedil;ais</a> | <a class="naviBlack" target="_self" href="../Output_spa/examples.html">Espa&ntilde;ol</a> | <a class="naviBlack" target="_self" href="../Output_rus/examples.html">По-русски</a> | <a class="naviBlack" target="_self" href="../Output_ger/examples.html">Deutsch</a> | <b>&gt;&gt;&nbsp;中文&nbsp;&lt;&lt;</b> | <a class="naviBlack" target="_self" href="../Output_ita/examples.html">Italiano</a></span></td>
+         </tr>
+      </table>
+      <table xmlns="http://www.w3.org/1999/xhtml" class="bar" width="750px" border="0" cellpadding="0" cellspacing="0">
+         <tr>
+            <td class="naviBlue"><a class="naviWhite" target="_top" href="../General_chi/examples.html">介绍</a> 
+               	/
+               	  <a class="naviWhite" target="_top" href="http://zvon.org/search.php">搜索</a> 
+               	/
+               	<a class="naviWhite" target="_top" href="http://www.zvon.org"> ZVON </a></td>
+         </tr>
+      </table>
+      <table xmlns="http://www.w3.org/1999/xhtml" width="100%">
+         <tr>
+            <td class="descriptionMenu">
+               <ul>
+                  <li>
+                     	 &gt;&gt;&nbsp;Examples&nbsp;&lt;&lt;
+                     
+                  </li>
+                  <li><a class="menu" href="./paths.html">XPaths</a></li>
+               </ul>
+            </td>
+         </tr>
+      </table>
+      <hr xmlns="http://www.w3.org/1999/xhtml">
+      <table border="1" width="100%" cellpadding="1">
+         <tr>
+            <td><a class="example" href="example1.html" target="mainWindow">实例 1</a><br>基本的XPath语法类似于在一个文件系统中定位文件,如果路径以斜线 / 开始, 那么该路径就表示到一个元素的绝对路径
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example2.html" target="mainWindow">实例 2</a><br>如果路径以双斜线 // 开头, 则表示选择文档中所有满足双斜线//之后规则的元素(无论层级关系)
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example3.html" target="mainWindow">实例 3</a><br>星号 * 表示选择所有由星号之前的路径所定位的元素
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example4.html" target="mainWindow">实例 4</a><br>方块号里的表达式可以进一步的指定元素, 其中数字表示元素在选择集里的位置, 而last()函数则表示选择集中的最后一个元素.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example5.html" target="mainWindow">实例 5</a><br></td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example6.html" target="mainWindow">实例 6</a><br>属性的值可以被用来作为选择的准则, normalize-space函数删除了前部和尾部的空格, 并且把连续的空格串替换为一个单一的空格
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example7.html" target="mainWindow">实例 7</a><br>count()函数可以计数所选元素的个数
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example8.html" target="mainWindow">实例 8</a><br>name()函数返回元素的名称, start-with()函数在该函数的第一个参数字符串是以第二个参数字符开始的情况返回true, contains()函数当其第一个字符串参数包含有第二个字符串参数时返回true.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example9.html" target="mainWindow">实例 9</a><br>string-length函数返回字符串的字符数,你应该用&amp;lt;替代&lt;, 用&amp;gt;代替&gt;
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example10.html" target="mainWindow">实例 10</a><br>多个路径可以用分隔符 | 合并在一起
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example11.html" target="mainWindow">实例 11</a><br>child轴(axis)包含上下文节点的子元素, 作为默认的轴,可以忽略不写. 
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example12.html" target="mainWindow">实例 12</a><br>descendant (后代)轴包含上下文节点的后代,一个后代是指子节点或者子节点的子节点等等, 因此descendant轴不会包含属性和命名空间节点. 
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example13.html" target="mainWindow">实例 13</a><br>parent轴(axis)包含上下文节点的父节点, 如果有父节点的话
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example14.html" target="mainWindow">实例 14</a><br>ancestor轴(axis)包含上下节点的祖先节点, 该祖先节点由其上下文节点的父节点以及父节点的父节点等等诸如此类的节点构成,所以ancestor轴总是包含有根节点,除非上下文节点就是根节点本身.
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example15.html" target="mainWindow">实例 15</a><br>following-sibling轴(axis)包含上下文节点之后的所有兄弟节点
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example16.html" target="mainWindow">实例 16</a><br>preceding-sibling 轴(axis)包含上下文节点之前的所有兄弟节点
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example17.html" target="mainWindow">实例 17</a><br>following轴(axis)包含同一文档中按文档顺序位于上下文节点之后的所有节点, 除了祖先节点,属性节点和命名空间节点
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example18.html" target="mainWindow">实例 18</a><br>following轴(axis)包含同一文档中按文档顺序位于上下文节点之前的所有节点, 除了祖先节点,属性节点和命名空间节点
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example19.html" target="mainWindow">实例 19</a><br>descendant-or-self 轴(axis)包含上下文节点本身和该节点的后代节点
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example20.html" target="mainWindow">实例 20</a><br> ancestor-or-self 轴(axis)包含上下文节点本身和该节点的祖先节点
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example21.html" target="mainWindow">实例 21</a><br>ancestor, descendant, following, preceding 和self轴(axis)分割了XML文档(忽略属性节点和命名空间节点), 不能交迭, 而一起使用则包含所有节点
+            </td>
+         </tr>
+         <tr>
+            <td><a class="example" href="example22.html" target="mainWindow">实例 22</a><br>div运算符做浮点除法运算, mod运算符做求余运算, floor函数返回不大于参数的最大整数(趋近于正无穷), ceiling返回不小于参数的最小整数(趋近于负无穷)
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

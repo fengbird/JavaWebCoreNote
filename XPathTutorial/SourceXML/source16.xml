@@ -1,0 +1,47 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>preceding-sibling::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse preceding-sibling contiene tutti i precedenti nodi-fratello del nodo contestuale.</description>
+	<description lang="eng">The preceding-sibling axis contains all the preceding siblings of the context node</description>
+	<description lang="ger">The "preceding-sibling" Achse enthält alle vorangehend Geschwister im Kontextknoten</description>
+	<description lang="cze">
+Osa "preceding-sibling" obsahuje všechny předcházející sourozence
+uzlu, který je v kontextu.
+</description>
+	<description lang="fre">
+L'axe 'preceding-sibling' contient tous les frères prédécesseurs du noeud contextuel; si le noeud contextuel est un attribut ou un espace de noms, la cible précédente est vide.
+</description>
+	<description lang="dut">De preceding-sibling spil bevat alle voorgaande afstammelingen van de context geleding.</description>
+	<description lang="spa">El eje 'preceding-sibling' contiene todos los elementos hermanos
+   que preceden el nodo del contexto.</description>
+	<description lang="rus">Ось preceding-sibling содержит всех предыдущих братьев контекстного узла.</description>
+	<description lang="chi">preceding-sibling 轴(axis)包含上下文节点之前的所有兄弟节点</description>
+	<source>
+		<AAA>
+			<BBB>
+				<CCC/>
+				<DDD/>
+			</BBB>
+			<XXX>
+				<DDD>
+					<EEE/>
+					<DDD/>
+					<CCC/>
+					<FFF/>
+					<FFF>
+						<GGG/>
+					</FFF>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD/>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/XXX/preceding-sibling::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//CCC/preceding-sibling::*">
+		<p lang="rus"/>
+	</example>
+</XPathTutorial>

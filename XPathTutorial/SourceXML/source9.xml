@@ -1,0 +1,62 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>string-length()</key>
+	<key>name()</key>
+	<key>&amp;lt;</key>
+	<key>&amp;gt;</key>
+	<description lang="ita">La funzione string-length() restituisce il numero di caratteri presenti nella stringa. Dovete utilizzre &amp;lt; in sostituzione di &lt; e &amp;gt; al posto di &gt; .</description>
+	<description lang="eng">The string-length function returns the number of characters in the string. You must use &amp;lt; as a substitute for &lt;  and &amp;gt; as a substitute for &gt; .</description>
+	<description lang="ger">Die Funktion "string-length()" liefert die Anzahl der Zeichen eines Strings zurück. Man muss &amp;lt; als Austausch für &lt; und &amp;gt; als Austausch für &gt; verwenden.</description>
+	<description lang="cze">
+Funkce "string-length" vrací počet znaků v řetězci.
+Musíte použít &amp;lt; jako náhražku pro &lt; (menší než)
+a &amp;gt; jako náhražku pro &gt; (větší než).</description>
+	<description lang="fre">
+La fonction string-length retourne le nombre de caractères dans une chaîne. Vous devez utiliser &amp;lt; comme substitutif de &lt; et &amp;gt comme substitutif de &gt;
+</description>
+	<description lang="dut">De functie string-length geeft het aantal tekens weer van een tekenreeks. U moet &amp;lt; gebruiken als vervanging voor &lt; en &amp;gt; als vervanging voor &gt;</description>
+	<description lang="spa">La función 'string-length' produce el número de 
+   caracteres de su argumento. Se debe utilizar &amp;lt; en remplazo de &lt;  
+   y &amp;gt; en remplazo de &gt;.</description>
+	<description lang="rus">Функция string-length() возвращает число символов в строке. Следует использовать &amp;lt; вместо &lt;, так как символ '&lt;' зарезервирован для нужд разметки.</description>
+	<description lang="chi">string-length函数返回字符串的字符数,你应该用&amp;lt;替代&lt;, 用&amp;gt;代替&gt;</description>
+	<source>
+		<AAA>
+			<Q/>
+			<SSSS/>
+			<BB/>
+			<CCC/>
+			<DDDDDDDD/>
+			<EEEE/>
+		</AAA>
+	</source>
+	<example path="//*[string-length(name()) = 3]">
+	        <p lang="ita">Selezione degli elementi il cui nome &#xE8; composto da 3 caratteri.</p>
+		<p lang="eng">Select elements with three-letter name</p>
+		<p lang="ger">Wähle alle Elemente aus, deren Namen drei Buchstaben enthält</p>
+		<p lang="cze">Vyber elementy, které mají třípísmenné jméno</p>
+		<p lang="dut">Selecteert alle elementen met een drieletterige naam</p>
+		<p lang="spa">Selecciona elementos con tres caracteres en su nombre</p>
+		<p lang="rus">Выбираются все элементы, имя которых состоит из трех символов</p>
+		<p lang="chi">选择名字长度为3的元素</p>
+	</example>
+	<example path="//*[string-length(name()) &lt; 3]">
+	        <p lang="ita">Selezione degli elementi il cui nome &#xE8; composto da 1 o 2 caratteri.</p>
+		<p lang="eng">Select elements name of which  has one or two characters</p>
+		<p lang="ger">Wähle alle Elemente aus, deren Namen ein oder zwei Buchstaben hat</p>
+		<p lang="cze">Vyber elementy, jejichž jméno má jeden nebo dva znaky</p>
+		<p lang="dut">Selecteert alle elementen die een naam hebben met een of twee tekens</p>
+		<p lang="spa">Selecciona elementos cuyo nombre contenga uno o dos caracteres</p>
+		<p lang="rus">Выбираются все элементы, имя которых состоит из двух или одного символа</p>
+		<p lang="chi">选择名字长度小于3的元素</p>
+	</example>
+	<example path="//*[string-length(name()) &gt; 3]">
+	        <p lang="ita">Selezione degli elementi il cui nome &#xE8; composto da pi&#xF9; di 3 caratteri.</p>
+		<p lang="eng">Select elements with name longer than three characters</p>
+		<p lang="ger">Wähle alle Elemente aus, deren Name mehr als drei Zeichen enthält</p>
+		<p lang="cze">Vyber elementy se jménem delším než tři znaky</p>
+		<p lang="dut">Selecteert alle elementen die een naam hebben die langer is dan drie tekens</p>
+		<p lang="spa">Selecciona elementos cuyo nombre tenga más de tres caracteres</p>
+		<p lang="rus">Выбираются все элементы, имя которых состоит более чем из трех символов</p>
+		<p lang="chi">选择名字长度大于3的元素</p>
+	</example>
+</XPathTutorial>

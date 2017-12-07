@@ -1,0 +1,80 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>attributes</key>
+	<key>@</key>
+	<key>not</key>
+	<description lang="ita">Gli attributi sono preceduti dal prefisso @</description>
+	<description lang="eng">Attributes are specified by @ prefix.</description>
+	<description lang="ger">Attribute werden mittels eines @ Präfixes spezifiziert.</description>
+	<description lang="cze">
+Atributy jsou specifikovány pomocí prefixu "@".</description>
+	<description lang="fre">
+Les attributs sont spécifiés par le prefixe @.
+</description>
+	<description lang="dut">Attributen worden gespecifïeerd met het @ voorvoegsel.</description>
+	<description lang="spa">Los atributos se especifican con el símbolo prefijo '@'.</description>
+	<description lang="rus">Атрибуты определяются префиксом @.</description>
+	<desription lang="chi">属性通过前缀 @ 来指定</desription>
+	<source>
+		<AAA>
+			<BBB id="b1"/>
+			<BBB id="b2"/>
+			<BBB name="bbb"/>
+			<BBB/>
+		</AAA>
+	</source>
+	<example path="//@id">
+	        <p lang="ita">Selezione di tutti gli attributi id.</p>
+		<p lang="eng">Select all attributes @id</p>
+		<p lang="ger">Wähle alle "id" Attribute aus</p>
+		<p lang="cze">Vyber všechny atributy @id</p>
+		<p lang="fre">Sélectionne tous les attributs id</p>
+		<p lang="dut">Selecteert alle id attributen</p>
+		<p lang="spa">Selecciona todos los atributos 'id'</p>
+		<p lang="rus">Выбираются все атрибуты @id</p>
+		<p lang="chi">选择所有的id属性</p>
+	</example>
+	<example path="//BBB[@id]">
+	        <p lang="ita">Selezione degli elementi BBB che possiedono l'attributo id.</p>
+		<p lang="eng">Select BBB elements which have attribute id</p>
+		<p lang="ger">Wähle jene BBB Elemente aus, die ein Attribut "id" haben</p>
+		<p lang="cze">Vyber všechny elementy BBB, které mají atribut "id"</p>
+		<p lang="fre">Sélectionne tous BBB qui ont un attribut id</p>
+		<p lang="dut">Selecteert alle BBB elementen met een id attribuut</p>
+		<p lang="spa">Selecciona los elementos BBB que contienen un atributo 'id'</p>
+		<p lang="rus">Выбираются элементы BBB, имеющие атрибут id</p>
+		<p lang="chi">选择有id属性的BBB元素</p>
+	</example>
+	<example path="//BBB[@name]">
+	        <p lang="ita">Selezione degli elementi BBB che possiedono l'attributo name.</p>
+		<p lang="eng">Select BBB elements which have attribute name</p>
+		<p lang="ger">Wähle jene BBB Elemente aus, die das Attribut "name" enthalten</p>
+		<p lang="cze">Vyber všechny elementy BBB, které mají atribut "name"</p>
+		<p lang="fre">Sélectionne tous BBB qui ont un attribut name</p>
+		<p lang="dut">Selecteert alle BBB elementen met het name atribuut</p>
+		<p lang="spa">Selecciona los elementos BBB que contienen un atributo 'name'</p>
+		<p lang="rus">Выбираются элементы BBB, имеющие атрибут name</p>
+		<p lang="chi">选择有name属性的BBB元素</p>
+	</example>
+	<example path="//BBB[@*]">
+	        <p lang="ita">Selezione degli elementi BBB che possiedono almeno un attributo.</p>
+		<p lang="eng">Select BBB elements which have any attribute</p>
+		<p lang="ger">Wähle jene BBB Elemente aus, die ein beliebiges Attribut haben</p>
+		<p lang="cze">Vyber všechny elementy BBB, které mají jakýkoli atribut</p>
+		<p lang="fre">Sélectionne tous BBB qui ont un attribut</p>
+		<p lang="dut">Selecteert alle BBB elementen die een attribuut hebben</p>
+		<p lang="spa">Selecciona los elementos BBB que contienen algún atributo</p>
+		<p lang="rus">Выбираются элементы BBB, имеющие хоть какой-нибудь атрибут</p>
+		<p lang="chi">选择有任意属性的BBB元素</p>
+	</example>
+	<example path="//BBB[not(@*)]">
+	        <p lang="ita">Selezione degli elementi BBB che non possiedono attributi.</p>
+		<p lang="eng">Select BBB elements without an attribute</p>
+		<p lang="ger">Wähle jene BBB Elemente aus, die kein Attribut haben</p>
+		<p lang="cze">Vyber všechny elementy BBB, které nemají žádný atribut</p>
+		<p lang="fre">Sélectionne tous BBB qui n'ont pas d'attribut</p>
+		<p lang="dut">Selecteert alle BBB elementen zonder een attribuut</p>
+		<p lang="spa">Selecciona los elementos BBB que no contienen atributos</p>
+		<p lang="rus">Выбираются элементы BBB, не имеющие ни одного атрибута</p>
+		<p lang="chi">选择没有属性的BBB元素</p>
+	</example>
+</XPathTutorial>

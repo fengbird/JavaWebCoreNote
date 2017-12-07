@@ -1,0 +1,41 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title> UpBar for ZVON materials </title><style type="text/css">
+      body { background-color: #3399cc; }
+      td { font-family: Arial, Tahoma, sans-serif; font-weight: bold; color: white; }
+      select { background-color: #f0f8ff; font-family: Arial, Tahoma, sans-serif; }
+    </style><script type="text/javascript">
+     function jumpto1(where) {
+        if (where != '') {
+        var tmp = window.open(where);
+        }
+        document.forms[0].elements[0].selectedIndex = 0;
+     }
+
+     function jumpto2(where) {
+        switch (where) {
+          case '':
+             break;
+          case 'ZVONinfo':
+             var tmp = window.open('http://zvon.org/News/ZVONinfo/Output/news.html');
+             break;
+          case 'sitemap':
+             var tmp = window.open('http://zvon.org/index.php?nav_id=zvonindex');
+             break;
+          case 'Search':
+             var tmp = window.open('http://zvon.org/search.php');
+             break;
+
+          case 'RefSearch':
+             var tmp = window.open('http://zvon.org/php/Search/codes.php');
+             break;
+
+          default:
+             parent.parent.framesLoaded(where);
+             break;
+       }
+       document.forms[1].elements[0].selectedIndex = 0;
+     }
+
+    </script></head><body><table width="100%" border="0" cellspacing="0" cellpadding="3"><tr valign="top"><td align="left"><table border="0" cellspacing="0" cellpadding="0"><tr align="left" valign="top"><td><form action=""><select size="1" onchange="jumpto1(this.options[this.selectedIndex].value)"><option value="" selected="selected">.. useful links ..</option><option value="http://www.w3.org">W3C</option><option value="http://www.zvon.org">ZVON web site</option><option value="http://lists.zvon.org/l/index.xp?ln=zvon">ZVON Mailing list archive</option></select></form></td><td><form action=""><select size="1" onchange="jumpto2(this.options[this.selectedIndex].value)"><option value="" selected="selected">.. shortcuts ..</option><option value="sitemap">ZVON sitemap</option><option value="Search">ZVON Search</option><option value="RefSearch">ZVON Reference Search</option><option value="ZVONinfo">ZVON info</option></select></form></td><td><iframe src="http://zvon.org/News/ZVONinfo/Output/news_iframe.html" frameborder="1" scrolling="yes" height="20" width="444" marginheight="0" marginwidth="5" style="margin-left: 10px;"/></td></tr></table></td><td align="right"><img src="zvon.gif" width="85" height="25" border="0" alt=""/></td></tr></table></body></html>

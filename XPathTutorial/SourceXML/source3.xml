@@ -1,0 +1,77 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>*</key>
+	<key>//</key>
+	<description lang="ita">L'asterisco * seleziona tutti gli elementi localizzati dal path precedente.</description>
+	<description lang="eng">The star * selects all elements located by preceeding path</description>
+	<description lang="ger">Der Stern * wählt alle Elemente aus, die durch den vorangehenden Pfades lokalisiert werden</description>
+	<description lang="cze">
+Hvězdička * vybere všechny elementy, které jsou určeny předcházejícím výrazem
+</description>
+	<description lang="fre">
+L'étoile * sélectionne tous les éléments localisés par ce qui la précède dans le chemin
+</description>
+	<description lang="dut">Een ster * selecteert alle elementen gelocaliseerd door het voorgaande path.</description>
+	<description lang="spa">El asterisco '*' selecciona todos los elementos ubicados por el camino que lo precede.</description>
+	<description lang="rus">Символ '*' указывает, что надо выбрать все элементы, соответствующие пути перед ней.</description>
+	<description lang="chi">星号 * 表示选择所有由星号之前的路径所定位的元素</description>
+	<source>
+		<AAA>
+			<XXX>
+				<DDD>
+					<BBB/>
+					<BBB/>
+					<EEE/>
+					<FFF/>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD>
+					<BBB/>
+					<BBB/>
+					<EEE/>
+					<FFF/>
+				</DDD>
+			</CCC>
+			<CCC>
+				<BBB>
+					<BBB>
+						<BBB/>
+					</BBB>
+				</BBB>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/CCC/DDD/*">
+	        <p lang="ita">Selezione di tutti gli elementi inclusi nel percorso /AAA/CCC/DDD</p>
+		<p lang="eng">Select all elements enclosed by elements /AAA/CCC/DDD</p>
+		<p lang="ger">Wähle alle Elemente aus, die von den /AAA/CCC/DDD Elementen eingeschlossen sind</p>
+		<p lang="cze">Vyber všechny elementy, které jsou přímými potomky /AAA/CCC/DDD</p>
+		<p lang="fre">Sélectionne tous les éléments inclus dans les éléments /AAA/CCC/DDD</p>
+		<p lang="dut">Selecteert alle elementen die zich bevinden in het path /AAA/CCC/DDD</p>
+		<p lang="spa">Selecciona todos los elementos contenidos en el camino /AAA/CCC/DDD</p>
+		<p lang="rus">Будут выбраны все элементы, являющиеся прямыми потомками /AAA/CCC/DDD</p>
+		<p lang="chi">选择所有路径依附于/AAA/CCC/DDD的元素</p>
+	</example>
+	<example path="/*/*/*/BBB">
+	        <p lang="ita">Selezione di tutti gli elementi BBB che possiedono 3 progenitori.</p>
+		<p lang="eng">Select all elements BBB which have 3 ancestors</p>
+		<p lang="ger">Wähle alle BBB Elemente aus, die 3 Vorfahren haben</p>
+		<p lang="cze">Vyber všechny elementy BBB, které mají právě tři předky</p>
+		<p lang="fre">Sélectionne tous les éléments BBB qui ont trois ancêtres</p>
+		<p lang="dut">Selecteert alle BBB elementen die 3 voorouders hebben</p>
+		<p lang="spa">Selecciona todos los elementos BBB incluidos en exactamente 3 ancestros</p>
+		<p lang="rus">Будут выбраны все элементы ВВВ, имеющие трех предков</p>
+		<p lang="chi">选择所有的有3个祖先元素的BBB元素</p>
+	</example>
+	<example path="//*">
+	        <p lang="ita">Selezione di tutti gli elementi.</p>
+		<p lang="eng">Select all elements</p>
+		<p lang="ger">Wähle alle Elemente aus</p>
+		<p lang="cze">Vyber všechny elementy</p>
+		<p lang="fre">Sélectionne tous les éléments</p>
+		<p lang="dut">Selecteert alle elementen</p>
+		<p lang="spa">Selecciona todos los elementos</p>
+		<p lang="rus">Будут выбраны все элементы</p>
+		<p lang="chi">选择所有元素</p>
+	</example>
+</XPathTutorial>

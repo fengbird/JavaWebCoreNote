@@ -1,0 +1,168 @@
+a
+        {
+        text-decoration:none;
+        color:#3399cc;
+        font-weight:bold;
+        font-family:tahoma,verdana,sans-serif;
+        }
+
+a.blue
+        {
+        text-decoration:none;
+        color:#3399cc;
+        font-weight:bold;
+        font-family:tahoma,verdana,sans-serif;
+        }
+
+a.simpel
+        {
+        text-decoration:none;
+        color:#3399cc;
+        font-weight:normal;
+        }
+a.naviWhite
+        {
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        font-family:tahoma,verdana,sans-serif;
+        }
+
+span.inverse
+        {
+        color: black;
+        background-color: #f0f8ff;
+        border: solid thin navy;
+        }
+
+span.inverse a
+        {
+        color: navy;
+        }
+
+
+a.naviBlack
+        {
+        color: navy;
+        }
+ 
+a.naviBlackNormal
+        {
+        color: black;
+        font-weight:normal;
+        }
+ 
+a.naviGreenNormal
+        {
+        color: green;
+        font-weight:normal;
+        }
+
+
+a.red
+        {
+        text-decoration:none;
+        color:#dc143c;
+        font-weight: bold;
+        font-family:tahoma,verdana,sans-serif;
+/*        border: solid 2px #3399cc;
+        background-color: #f0f8ff;
+        text-transform: lowercase;
+        font-size: 80%;
+        height: 80%; */
+        }
+td.naviBlue
+        {
+        background-color:#3399cc;
+        color:white;
+        }
+
+td.navi
+        {
+        background-color:#f0f8ff;
+        color: black;
+/*        font-weight:normal;
+        font-family:tahoma,verdana,sans-serif;
+        font-size:11px; */
+        }
+
+body
+        {
+        background-color:#f0f8ff;
+        color: black;
+        font-family:tahoma,verdana,sans-serif;
+        }
+
+h2, h3 {
+        font-family:tahoma,verdana,sans-serif;
+   }
+
+td.naviBlack
+        {
+        background-color: navy;
+        }
+
+
+
+
+
+
+
+/* global common settings */
+span.smallText, div.smallText  { font-size: 60%; }
+span.mediumText, p.mediumText  { font-size: 80%; }
+
+a.smallBlackLink
+    {
+     font-size: 60%;
+     color: black;
+     font-weight: bold;
+    }
+
+span.red {color:red}
+
+
+table.bar
+         {
+          background-color:#3399cc;
+          width: 100%;
+          text-align: center;
+          border-spacing: 0;
+          border-top: solid thin black;
+          border-bottom: solid thin black;
+         }
+
+table.bar td  { color: white; font-size: 80%; }
+
+td.descriptionMenu   { text-align: left; font-weight:bold }
+td.descriptionMenu { font-size:80%; }
+td.descriptionMenu > ul { padding-left: 0px; margin-left: 10px;}
+td.descriptionMenu ul ul { padding-left: 10px; margin-left: 10px;}
+td.descriptionMenu a { color: navy; }
+
+td.descriptionMenu ul li { list-style-type: none; }
+
+ 
+table.hangingMenu, table.menu { background-color:#f0f8ff; width: 100%; }
+
+table.menu { text-align: right; border-bottom: solid thin black; }
+table.hangingMenu { text-align: left; }
+table.menu td, table.hangingMenu td { font-size: 80%; }
+
+a.naviWhite
+        {
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        font-family:tahoma,verdana,sans-serif;
+        }
+
+a.naviBlack { color: navy; }
+
+a:hover { color:red }
+
+
+/* inzerat */
+#inzerat a         {color: blue; font-weight: normal; text-decoration: underline}
+#inzerat a:visited {color: red ; font-weight: normal; text-decoration: underline}
+

@@ -1,0 +1,58 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>following::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse following contiene tutti i nodi che sono presenti nello stesso documento del nodo contestuale e che sono successivi rispetto a esso secondo l'ordine del documento, esclusi nodi discendenti, di attributo o di namespace.</description>
+	<description lang="eng">The following axis contains all nodes in the same document as the context node that are after the context node in document order, excluding any descendants and excluding attribute nodes and namespace nodes.</description>
+	<description lang="ger">Die "following" Achse enthält alle Knoten im gleichen Dokument als Kontextknoten, die sich in der Reihenfolge des Dokuments nach dem Kontextknoten befinden. Nachfahren sowie Attribut- und Namensraumknoten sind hierbei ausgeschlossen.</description>
+	<description lang="cze">
+Osa "following" ("následující") obsahuje všechny uzly v tom samém
+dokumentu, které se vyskytují po uzlu, který je v kontextu,
+a to podle pořadí v dokumentu ("document order") a vyjma
+jakýchkoli potomků, atributů a uzlů jmenných prostorů.
+</description>
+	<description lang="fre">
+l'axe suivant (following) tous les noeuds du même document que le noeud contextuel qui sont après le noeud contextuel dans l'ordre du document, à l'exclusion de tout descendant, des attributs et des espaces de noms.
+</description>
+	<description lang="dut">De following spil bevat alle geledingen die in hetzelfde document staan als de context geleding die na de context geleding komen in het document behalve de onderdanige elementen en de attribuut en namespace geledingen.</description>
+	<description lang="spa">El eje 'following' contiene todos los nodos del documento
+   que se encuentran luego del nodo del contexto. Esto no incluye ancestros, descendientes,
+   nodos de atributo ni nodos 'namespace'.</description>
+	<description lang="rus">Ось following содержит в том же порядке, что и в самом документе, все узлы, идущие после контекстного, за исключением всех потомков, узлов атрибутов и пространств имен.</description>
+	<description lang="chi">following轴(axis)包含同一文档中按文档顺序位于上下文节点之后的所有节点, 除了祖先节点,属性节点和命名空间节点</description>
+	<source>
+		<AAA>
+			<BBB>
+				<CCC/>
+				<ZZZ>
+					<DDD/>
+					<DDD>
+						<EEE/>
+					</DDD>
+				</ZZZ>
+				<FFF>
+					<GGG/>
+				</FFF>
+			</BBB>
+			<XXX>
+				<DDD>
+					<EEE/>
+					<DDD/>
+					<CCC/>
+					<FFF/>
+					<FFF>
+						<GGG/>
+					</FFF>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD/>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/XXX/following::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//ZZZ/following::*">
+		<p lang="rus"/>
+	</example>
+</XPathTutorial>

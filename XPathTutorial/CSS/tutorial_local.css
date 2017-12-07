@@ -1,0 +1,17 @@
+/* <zvonimport>../../../CSS/base_first.css</zvonimport> */
+
+a.xpath {font-weight:bold; text-decoration:none}
+a.example {font-weight:bold; text-decoration:none}
+.description { color:black}
+
+A.indexExample {color:#3399cc; font-weight:bold;text-decoration:none;}
+A.indexExample:hover {color:#ffa500;}
+
+span.element {color:navy}
+span.elementOn {color:red}
+
+td.code {font-weight: bold; color:navy}
+
+
+/* <zvonimport>../../../CSS/global.css</zvonimport> */
+

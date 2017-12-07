@@ -1,0 +1,74 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>ancestor::</key>
+	<key>descendant::</key>
+	<key>following::</key>
+	<key>preceding::</key>
+	<key>self::</key>
+	<key>axes</key>
+	<description lang="ita">Gli assi ancestor, descendant, following, preceding e self partizionano un documento (ignorando gli attributi e i nodi di namespace). Il contenuto di tali assi &#xE8; differente l'uno dagli altri e congiuntamente rappresentano l'insieme di tutti i nodi del documento.</description>
+	<description lang="eng"> The ancestor, descendant, following, preceding and self axes partition a document (ignoring
+    attribute and namespace nodes): they do not overlap and together they contain all the nodes in the document.</description>
+	<description lang="ger">Die "ancestor" (Vorfahren), "descendant" (Nachfahren), "following" (folgenden), "preceding" (vorangehend) and "self" (selbst) Achsen teilen ein Dokument auf (und ignorieren dabei die Attribut- und Namensraumsknoten): Sie überlappen sich nicht gegenseitig und enthalten zusammen alle Knoten in einem Dokument.</description>
+	<description lang="cze">
+Osy "ancestor", "descendant", "following", "preceding" a "self"
+rozdělují dokument
+(ignorujíc uzly typu atribut a jmenný prostor):
+nepřekrývají se a dohromady obsahují všechny uzly dokumentu.
+</description>
+	<description lang="fre">
+Les axes ancestors, descendants, following, preceding et self partitionnent un document (ignorant les attributs et les noeuds d'espace de nom) : il ne se chevauchent pas et ensemble ils contiennent tous les noeuds d'un document
+</description>
+	<description lang="dut">De ancestor, descendant, following, preceding en self spillen verdelen een document, niet kijkende naar de attribuut en namespace geledingen. Ze overlappen elkaar niet maar samen kunnen ze wel alle geledingen bevatten van het document.</description>
+	<description lang="spa"> Para un camino que especifica un único elemento
+   de un documento, los ejes 'ancestor', 'descendant', 'following', 
+   'preceding' y 'self' constituyen una partición de ese documento
+   (no tomando en cuenta nodos de atributos ni de 'namespace'): 
+   No tienen nodos en comun y juntos especifican todos los nodos del documento.
+</description>
+	<description lang="rus">Оси ancestor, descendant, following, preceding и self axes покрывают документ (за исключением узлов атрибутов и пространств имен): они не перескаются и вместе содержат все узлы документа.</description>
+	<description lang="chi">ancestor, descendant, following, preceding 和self轴(axis)分割了XML文档(忽略属性节点和命名空间节点), 不能交迭, 而一起使用则包含所有节点</description>
+	<source>
+		<AAA>
+			<BBB>
+				<CCC/>
+				<ZZZ/>
+			</BBB>
+			<XXX>
+				<DDD>
+					<EEE/>
+					<FFF>
+						<HHH/>
+						<GGG>
+							<JJJ>
+								<QQQ/>
+							</JJJ>
+							<JJJ/>
+						</GGG>
+						<HHH/>
+					</FFF>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD/>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="//GGG/ancestor::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//GGG/descendant::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//GGG/following::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//GGG/preceding::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//GGG/self::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//GGG/ancestor::* | //GGG/descendant::* | //GGG/following::* | //GGG/preceding::* | //GGG/self::*">
+		<p lang="rus"/>
+	</example>
+</XPathTutorial>

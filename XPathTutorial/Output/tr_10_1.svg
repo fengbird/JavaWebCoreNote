@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg
+  PUBLIC "-//W3C//DTD SVG 20000802//EN" "http://www.w3.org/TR/2000/CR-SVG-20000802/DTD/svg-20000802.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="225">
+   <defs>
+      <g id="arrowMarker">
+         <g stroke="black" stroke-width="1">
+            <line x1="6" y1="-2" x2="0" y2="0"/>
+            <line x1="6" y1="+2" x2="0" y2="0"/>
+         </g>
+      </g>
+      <marker id="startMarker" markerWidth="36" markerHeight="24" viewBox="-4 -4 25 5" orient="auto" refX="0" refY="0" markerUnits="strokeWidth">
+         <g>
+            <use xlink:href="#arrowMarker" transform="rotate(180)" stroke-width="1" stroke="black"/>
+         </g>
+      </marker>
+   </defs>
+   <rect width="300" height="225" x="0" y="0" fill="white" opacity="1.0"/>
+   <g text-anchor="end" font-family="dialog">
+      <text x="99%" y="20">/AAA/EEE | //BBB</text>
+      <text x="99%" y="99%" font-size="8pt">ZVON.org - XPathTutorial</text>
+   </g>
+   <g>
+		
+         
+      <rect x="0" y="0" height="50px" width="20" stroke="black" fill="#3399cc"/>
+      <g transform="translate(0, 0)                   rotate(90)                   translate(5,-5)">
+         <text y="0" x="0" text-anchor="start" fill="white" font-family="sans-serif, dialog" font-weight="bold">AAA</text>
+      </g>
+			
+            
+      <rect x="0" y="75" height="50px" width="20" stroke="black" fill="red"/>
+      <g transform="translate(0, 75)                   rotate(90)                   translate(5,-5)">
+         <text y="0" x="0" text-anchor="start" fill="white" font-family="sans-serif, dialog" font-weight="bold">BBB</text>
+      </g>
+      <line x1="10" x2="10" y1="52" y2="73" style="fill:none; stroke:black; stroke-width:1" marker-end="url(#startMarker)"/>
+			
+            
+      <rect x="60" y="75" height="50px" width="20" stroke="black" fill="#3399cc"/>
+      <g transform="translate(60, 75)                   rotate(90)                   translate(5,-5)">
+         <text y="0" x="0" text-anchor="start" fill="white" font-family="sans-serif, dialog" font-weight="bold">CCC</text>
+      </g>
+      <line x1="10" x2="70" y1="52" y2="73" style="fill:none; stroke:black; stroke-width:1" marker-end="url(#startMarker)"/>
+			
+            
+      <rect x="120" y="75" height="50px" width="20" stroke="black" fill="#3399cc"/>
+      <g transform="translate(120, 75)                   rotate(90)                   translate(5,-5)">
+         <text y="0" x="0" text-anchor="start" fill="white" font-family="sans-serif, dialog" font-weight="bold">DDD</text>
+      </g>
+      <line x1="10" x2="130" y1="52" y2="73" style="fill:none; stroke:black; stroke-width:1" marker-end="url(#startMarker)"/>
+				
+               
+      <rect x="0" y="150" height="50px" width="20" stroke="black" fill="#3399cc"/>
+      <g transform="translate(0, 150)                   rotate(90)                   translate(5,-5)">
+         <text y="0" x="0" text-anchor="start" fill="white" font-family="sans-serif, dialog" font-weight="bold">CCC</text>
+      </g>
+      <line x1="130" x2="10" y1="127" y2="148" style="fill:none; stroke:black; stroke-width:1" marker-end="url(#startMarker)"/>
+			
+            
+			
+            
+      <rect x="180" y="75" height="50px" width="20" stroke="black" fill="red"/>
+      <g transform="translate(180, 75)                   rotate(90)                   translate(5,-5)">
+         <text y="0" x="0" text-anchor="start" fill="white" font-family="sans-serif, dialog" font-weight="bold">EEE</text>
+      </g>
+      <line x1="10" x2="190" y1="52" y2="73" style="fill:none; stroke:black; stroke-width:1" marker-end="url(#startMarker)"/>
+		
+         
+	
+      
+   </g>
+</svg>

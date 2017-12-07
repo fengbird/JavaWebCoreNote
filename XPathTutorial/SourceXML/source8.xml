@@ -1,0 +1,77 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>name()</key>
+	<key>starts-with()</key>
+	<key>contains()</key>
+	<description lang="ita">La funzione name() restituisce il nome dell'elemento, la funzione starts-with() ritorna true se la stringa utilizzata come primo argomento inizia con la stringa utilizzata come secondo argomento e, infine, la funzione contains() restituisce true se la stringa utilizzata come primo argomento contiene la stringa passata come secondo argomento.</description>
+	<description lang="eng">Function name() returns name of the element, the starts-with function returns true if the first argument string starts with the second argument string, and the contains function returns true if the first argument string contains the second argument string.</description>
+	<description lang="ger">Die Funktion "name()" gibt den Namen des Elements zurück. Die Funktion "starts-with()" gibt "true" zurück falls der String des ersten Arguments mit dem String des zweiten Arguments startet. Die Funktion "contains()" gibt "true" zurück falls der String des ersten Arguments den String des zweiten Arguments beinhaltet.</description>
+	<description lang="cze">
+Funkce name() vrací jméno elementu, funkce "starts-with"
+vrací hodnotu "true", pokud první argument začíná řetězcem, který je uveden
+jako druhý argument.
+Funkce "contains" vrací hodnotu "true", pokud 
+ první argument obsahuje řetězec, který je uveden
+jako druhý argument.</description>
+	<description lang="fre">
+La fonction name() retourne le nom de l'élément, 
+la fonction start-with retourne vrai si la chaîne du premier argument commence par celle du deuxième 
+et la fonction contains retourne vrai si la chaîne du premier argument contient celle du deuxième
+</description>
+	<description lang="dut">Functie name() geeft de naam van het element weer, de functie starts-with wordt van toepassing als het begin van het eerste argument gelijk is aan het tweede argument en de functie contains wordt van toepassing als het eerste argument het tweede argument bevat</description>
+	<description lang="spa">La función name() produce el nombre del elemento 
+   seleccionado, la función 'starts-with' es verdadera cuando la cadena de 
+   caracteres pasada en primer argumento tiene como prefijo al segundo argumento.
+   Lo función 'contains' es verdadera cuando la cadena del primer 
+   argumento contiene al segundo argumento.</description>
+	<description lang="rus">Функция name() возвращает имя элемента. Функция starts-with() возвращает истину, если строка первого аргумента начинается строкой второго аргумента. Функция contains() возвращает истину, если строка из первого аргумента содержит строку из второго.</description>
+	<description lang="chi">name()函数返回元素的名称, start-with()函数在该函数的第一个参数字符串是以第二个参数字符开始的情况返回true, contains()函数当其第一个字符串参数包含有第二个字符串参数时返回true.</description>
+	<source>
+		<AAA>
+			<BCC>
+				<BBB/>
+				<BBB/>
+				<BBB/>
+			</BCC>
+			<DDB>
+				<BBB/>
+				<BBB/>
+			</DDB>
+			<BEC>
+				<CCC/>
+				<DBD/>
+			</BEC>
+		</AAA>
+	</source>
+	<example path="//*[name()='BBB']">
+	        <p lang="ita">Selezione di tutti gli elementi di nome BBB: equivalente a //BBB</p>
+		<p lang="eng">Select all elements with name BBB, equivalent with //BBB</p>
+		<p lang="ger">Wähle alle Elemente mit dem Namen BBB aus. Entspricht //BBB</p>
+		<p lang="cze">Vyber všechny elementy, které se jmenují BBB, ekvivalent k //BBB</p>
+		<p lang="dut">Selecteert alle BBB elementen, //BBB geeft hetzelfde resultaat weer</p>
+		<p lang="spa">Selecciona todos los elementos BBB, equivalente a //BBB</p>
+		<p lang="rus">Выбираются все элементы с именем BBB; эквивалентно пути //BBB</p>
+		<p lang="chi">选择所有名称为BBB的元素(这里等价于//BBB)</p>
+	</example>
+	<example path="//*[starts-with(name(),'B')]">
+	        <p lang="ita">Selezione di tutti gli elementi il cui nome inizia con la lettera B.</p>
+		<p lang="eng">Select all elements name of which starts with letter B</p>
+		<p lang="ger">Wähle alle Elemente aus, deren Name mit dem Buchstaben B beginnt</p>
+		<p lang="cze">Vyber všechny elementy, jejichž jméno začíná písmenem B</p>
+		<p lang="dut">Selecteert alle elementen waarvan de naam begint met B</p>
+		<p lang="spa">Selecciona todos los elementos cuyo nombre se inicie
+      con la letra B</p>
+		<p lang="rus">Выбираются все элементы, имя которых начинается с B</p>
+		<p lang="chi">选择所有名称以"B"起始的元素</p>
+	</example>
+	<example path="//*[contains(name(),'C')]">
+	        <p lang="ita">Selezione di tutti gli elementi il cui nome contiene la lettera C.</p>
+		<p lang="eng">Select all elements name of which contain letter C</p>
+		<p lang="ger">Wähle alle Elemente aus, deren Namen den Buchstaben C enthält</p>
+		<p lang="cze">Vyber všechny elementy, jejichž jméno obsahuje písmeno C</p>
+		<p lang="dut">Selecteert alle elementen die C in hun naam hebben</p>
+		<p lang="spa">Selecciona todos los elementos cuyo nombre contenga
+      la letra C</p>
+		<p lang="rus">Выбираются все элементы, имя которых содержит C</p>
+		<p lang="chi">选择所有名称包含"C"的元素</p>
+	</example>
+</XPathTutorial>

@@ -1,0 +1,66 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>count()</key>
+	<description lang="ita">La funzione count() calcola il numero degli elementi selezionati.</description>
+	<description lang="eng">Function count() counts the number of selected elements </description>
+	<description lang="ger">Die Funktion count() zählt die Anzahlt der ausgewählten Elemente</description>
+	<description lang="cze">
+Funkce count() vrátí počet vybraných elementů </description>
+	<description lang="fre">
+La fonction count() compte le nombre d'éléments sélectionnés.
+</description>
+	<description lang="dut">Functie count() telt het aantal geselecteerde elementen</description>
+	<description lang="spa">La función count() cuenta el número de elementos seleccionados</description>
+	<description lang="rus">Функция count() возвращает число элементов в указанном множестве.</description>
+	<description lang="chi">count()函数可以计数所选元素的个数</description>
+	<source>
+		<AAA>
+			<CCC>
+				<BBB/>
+				<BBB/>
+				<BBB/>
+			</CCC>
+			<DDD>
+				<BBB/>
+				<BBB/>
+			</DDD>
+			<EEE>
+				<CCC/>
+				<DDD/>
+			</EEE>
+		</AAA>
+	</source>
+	<example path="//*[count(BBB)=2]">
+	        <p lang="ita">Selezione degli elementi che possiedono due figli BBB</p>
+		<p lang="eng">Select elements which have two children BBB</p>
+		<p lang="ger">Wähle jene Elemente aus, die zwei BBB Kinder haben</p>
+		<p lang="cze">Vyber elementy, které mají právě dva přímé potomky BBB</p>
+		<p lang="fre">Sélectionne les éléments ayant deux enfants BBB </p>
+		<p lang="dut">Selecteert alle elementen die twee BBB kinderen bevatten</p>
+		<p lang="spa">Selecciona los elementos que contienen dos hijos BBB</p>
+		<p lang="rus">Выбираются элементы, имеющие два дочерних элемента 
+BBB</p>
+       <p lang="chi">选择含有2个BBB子元素的元素</p>
+	</example>
+	<example path="//*[count(*)=2]">
+	        <p lang="ita">Selezione degli elementi che possiedono 2 figli.</p>
+		<p lang="eng">Select elements which have 2 children</p>
+		<p lang="ger">Wähle jene Elemente aus, die zwei Kinder haben</p>
+		<p lang="cze">Vyber elementy, které mají právě dva přímé potomky</p>
+		<p lang="fre">Sélectionne les éléments ayant deux enfants</p>
+		<p lang="dut">Selecteert alle elementen die twee kinderen hebben</p>
+		<p lang="spa">Selecciona elementos con dos hijos</p>
+		<p lang="rus">Выбираются элементы, имеющие два произвольных дочерних элемента</p>
+		<p lang="chi">选择含有2个子元素的元素</p>
+	</example>
+	<example path="//*[count(*)=3]">
+	        <p lang="ita">Selezione degli elementi che possiedono 3 figli.</p>
+		<p lang="eng">Select elements which have 3 children</p>
+		<p lang="ger">Wähle jene Elemente aus, die drei Kinder haben</p>
+		<p lang="cze">Vyber elementy, které mají právě tři přímé potomky</p>
+		<p lang="fre">Sélectionne les éléments ayant trois enfants</p>
+		<p lang="dut">Selecteert alle elementen die drie kinderen hebben</p>
+		<p lang="spa">Selecciona elementos con 3 hijos</p>
+		<p lang="rus">Выбираются элементы, имеющие три произвольных дочерних элемента</p>
+		<p lang="chi">选择含有3个子元素的元素</p>
+	</example>
+</XPathTutorial>

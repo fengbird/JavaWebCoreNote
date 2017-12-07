@@ -1,0 +1,88 @@
+<!DOCTYPE frontPage [
+	<!ENTITY languageMenu SYSTEM "../Data/languageLabels.inc">
+]>
+<frontPage lang="chi" xmlns:html="http://www.w3.org/TR/REC-html40" idref="z19991208">
+	<menu>
+		<items>
+			<a id="index" target="_top" class="naviBlack" href="../Output_chi/example1.html">开始</a>
+			<a id="index" target="_top" class="naviBlack" href="../General_chi/examples.html">索引</a>
+		</items>
+	</menu>
+	<languageMenu>
+     &languageMenu;
+  </languageMenu>
+	<head>
+		<author id="nicmila"/>
+		<author id="jiratj"/>
+		<translator id="wangtao"/>
+		<title>XPath 教程</title>
+	</head>
+	<body>
+		<section>
+			<title>简介</title>
+			<para>
+			  XPath由W3C的<html:a href="http://www.w3.org/TR/xpath">XPath 1.0 标准</html:a>描述.本教程通过实例来展示XPath的一些特性.
+</para>
+		</section>
+		<section>
+			<para>你可以从以下内容开始:</para>
+			<list>
+				<item>
+					<html:a href="../Output_chi/example1.html">实例 1</html:a>
+				</item>
+			</list>
+			<para>或者从左边的索引开始</para>
+		</section>
+		<section>
+			<title>也可以访问</title>
+			<list>
+				<item>
+					<html:a href="http://www.zvon.org:9001/saxon/cgi-bin/XLab/XML/xlabIndex.html?stylesheetFile=XSLT/xlabIndex.xslt">XLab</html:a> - interactive XPath experiments
+    </item>
+				<item>
+					<link idref="z19991207">XML 教程</link>
+				</item>
+				<item>
+					<link idref="z19991203">DTD 教程</link>
+				</item>
+				<item>
+					<link idref="z20000810d">XML 命名空间教程</link>
+				</item>
+				<item>
+					<link idref="z20001220">XHTML 1.0 参考</link>
+				</item>
+				<item>
+					<link idref="z20001221">XHTML基础 参考</link>
+				</item>
+			</list>
+		</section>
+		<zvonXSLT/>
+		<section>
+			<title>致谢</title>
+			<list>
+				<item>Miloslav Nic - 编程和实例</item>
+				<item>Jiri Jirat - 实例的树型视图</item>
+			</list>
+		</section>
+		<keywords/>
+		<zvon/>
+		<downloads/>
+	</body>
+	<appendix>
+		<referrer id="XPath+Tutorial"/>
+		<copyright id="systinet" year="2000"/>
+		<zvonLink id="zvonLink1"/>
+		<licence id="FDL"/>
+		<licence id="GPL"/>
+		<program id="saxon"/>
+		<program id="python"/>
+		<program id="batik"/>
+	</appendix>
+	<indexFrame upbarlink="../Output/_upbar.html">
+		<links/>
+		<frameset cols="250,*">
+			<frame name="mainIndex" src="../Output/examples.html"/>
+			<frame name="mainWindow" src="../Output/introduction.html"/>
+		</frameset>
+	</indexFrame>
+</frontPage>

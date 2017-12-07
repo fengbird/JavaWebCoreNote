@@ -1,0 +1,49 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>descendant-or-self::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse descendant-or-self contiene il nodo contestuale e i suoi discendenti.</description>
+	<description lang="eng">The descendant-or-self axis contains the context node and the descendants of the context node</description>
+	<description lang="ger">Die "descendant-or-self" Achse enthält den Kontextknoten und die Nachfahren des Kontextknotens</description>
+	<description lang="cze">
+Osa "descendant-or-self" obsahuje kontextový uzel
+a všechny jeho potomky
+</description>
+	<description lang="fre">
+L'axe "descendant-or-self" contient le noeud contextuel et ses descendants
+</description>
+	<description lang="dut">De descendant-or-self spil bevat de context geleding en zijn onderdanige elementen.</description>
+	<description lang="spa">El eje 'descendant-or-self' contiene el nodo
+   contexto y sus descendentes.</description>
+	<description lang="rus">Ось descendant-or-self содержит контекстный узел и всех его потомков.</description>
+	<description lang="chi">descendant-or-self 轴(axis)包含上下文节点本身和该节点的后代节点</description>
+	<source>
+		<AAA>
+			<BBB>
+				<CCC/>
+				<ZZZ>
+					<DDD/>
+				</ZZZ>
+			</BBB>
+			<XXX>
+				<DDD>
+					<EEE/>
+					<DDD/>
+					<CCC/>
+					<FFF/>
+					<FFF>
+						<GGG/>
+					</FFF>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD/>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/XXX/descendant-or-self::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//CCC/descendant-or-self::*">
+		<p lang="rus"/>
+	</example>
+</XPathTutorial>

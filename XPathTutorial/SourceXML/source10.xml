@@ -1,0 +1,60 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>|</key>
+	<description lang="ita">Path distinti possono essere composti tra loro grazie al separatore |</description>
+	<description lang="eng">Several paths can be combined with | separator.</description>
+	<description lang="ger">Mehrer Pfade können mit dem | Trennzeichen kombiniert werden.</description>
+	<description lang="cze">Několik výrazů může být kombinováno pomocí 
+separátoru |</description>
+	<description lang="fre">
+Plusieurs chemins peuvent être combinés avec le séparateur |
+</description>
+	<description lang="dut">Verschillende paths kunnen gecombineerd worden met de | scheider</description>
+	<description lang="spa">Diferentes caminos pueden ser combinados con el separador '|'.</description>
+	<description lang="rus">Несколько путей можно скомбинировать с помощью разделителя |.</description>
+	<description lang="chi">多个路径可以用分隔符 | 合并在一起</description>
+	<source>
+		<AAA>
+			<BBB/>
+			<CCC/>
+			<DDD>
+				<CCC/>
+			</DDD>
+			<EEE/>
+		</AAA>
+	</source>
+	<example path="//CCC | //BBB">
+	        <p lang="ita">Selezione di tutti gli elementi CCC e BBB</p>
+		<p lang="eng">Select all elements CCC and BBB</p>
+		<p lang="ger">Wähle alle CCC und BBB Elemente aus</p>
+		<p lang="cze">Vyber všechny elementy CCC a BBB</p>
+		<p lang="fre">Sélectionne tous les éléments CCC et BBB</p>
+		<p lang="dut">Selecteert alle elementen CCC en BBB elemeneten</p>
+		<p lang="spa">Selecciona todos los elementos CCC y BBB</p>
+		<p lang="rus">Выбираются все элементы CCC и BBB</p>
+		<p lang="chi">选择所有的CCC和BBB元素</p>
+	</example>
+	<example path="/AAA/EEE | //BBB">
+	        <p lang="ita">Selezione di tutti gli elementi BBB e degli elementi EEE che sono figli dell'elemento radice AAA</p>
+		<p lang="eng">Select all elements BBB and elements EEE which are children of root element AAA</p>
+		<p lang="ger">Wähle alle BBB und EEE Elemente aus, die Kinder des Wurzelelements AAA sind</p>
+		<p lang="cze">Vyber všechny elementy BBB a elementy EEE, které jsou 
+přímými potomky kořenového elementu AAA</p>
+		<p lang="fre">Sélectionne tous les éléments BBB et EEE qui sont enfants de l'élément racine AAA</p>
+		<p lang="dut">Selecteert alle elementen BBB elementen en EEE elementen die kind zijn van het basiselement AAA</p>
+		<p lang="spa">Selecciona todos los elementos BBB y los elementos EEE que son hijos del
+      elemento raiz AAA</p>
+		<p lang="rus">Выбираются все элементы BBB и все элементы EEE, чьим прямым родителем является корневой элемент AAA</p>
+		<p lang="chi">选择所有的BBB元素和所有是AAA的子元素的EEE元素</p>
+	</example>
+	<example path="/AAA/EEE | //DDD/CCC | /AAA | //BBB">
+	        <p lang="ita">Il numero di combinazioni non &#xE8; soggetto a limiti.</p>
+		<p lang="eng">Number of combinations is not restricted</p>
+		<p lang="ger">Die Anzahl der Kombinationen ist nicht begrenzt</p>
+		<p lang="cze">Počet kombinací není omezen</p>
+		<p lang="fre">Le nombre de combinaison n'est pas restreinte</p>
+		<p lang="dut">Het aantal combinaties is vrij te kiezen</p>
+		<p lang="spa">Las posibles combinaciones no estan acotadas </p>
+		<p lang="rus">Количество комбинаций не ограничено</p>
+		<p lang="chi">可以合并的路径数目没有限制</p>
+	</example>
+</XPathTutorial>

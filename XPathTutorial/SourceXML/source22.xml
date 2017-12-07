@@ -1,0 +1,65 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>position()</key>
+	<key>mod</key>
+	<key>div</key>
+	<key>floor()</key>
+	<key>ceiling()</key>
+	<key>last()</key>
+	<description lang="ita">L'operatore div esegue una divisione a virgola mobile, l'operatore mod restituisce il resto di una divisione con troncamento. La funzione floor() restituisce l'intero pi&#xF9; grande minore del suo argomento. La funzione ceiling() restituisce l'intero pi&#xF9; piccolo maggiore del suo argomento.</description>
+	<description lang="eng">The div operator performs floating-point division, the mod operator returns the remainder from a truncating division. The floor function returns the largest (closest to positive infinity) number that is not greater than the argument and that is an integer.The ceiling function returns the smallest (closest to negative infinity) number that is not less than the argument and that is an integer. 
+</description>
+	<description lang="ger">Der "div" Operator führt Divisionen mit Gleitkommazahlen durch. Der "mod" Operator liefert den Rest einer nicht aufgehenden Division zurück. Die "floor()" Funktion liefert die größte (am nächsten bei Plus-Unendlich liegende) Zahl zurück, die nicht größer als ihr Argument ist und eine Integerzahl ist. Die "ceiling ()" Funktion liefert die kleinste (am nächsten bei Minus-Unendlich liegende) Zahl zurück, die nicht kleiner als ihr Argument ist und eine Integerzahl ist.</description>
+	<description lang="cze">
+Operátor "div" provádí dělení (neceločíselné), 
+operátor "mod" vrací zbytek po celočíselném dělení.
+Funkce "floor" vrací nejvyšší (bližší k plus nekonečnu)
+celé číslo, které není vyšší než argument.
+Funkce "ceiling" nejmenší (bližší k minus nekonečnu)
+celé číslo, které není menší než argument.
+</description>
+	<description lang="fre">
+L'opérateur div réalise une division à virgule flottante, l'opérateur mod retourne le reste d'une division. La fonction floor() retourne le plus grand nombre (le plus près de l'infini positif) qui n'est pas plus grand que l'argument et qui est un entier. La fonction ceiling() retourne le plus petit nombre (le plus près de l'infini négatif) qui n'est pas plus petit que l'argument et qui est un entier</description>
+	<description lang="dut">De div operator maakt komma getal delingen; De mod operator geeft de rest weer van een staartdeling. De floor functie geeft het grootste getal weer, dichtst bij het positieve oneindige, dat niet groter is dan het argument en geheel is. De ceiling functie geeft het kleinste getal weer, dichtst bij het negatieve oneindige, dat niet kleiner is dan het het argument en geheel is.</description>
+	<description lang="spa">El operador 'div' realiza divisiones en punto flotante,
+   el operador 'mod' calcula el residuo entero de la división. 
+   El operador 'floor' calcula el más grande entero que no es mayor que el argumento.
+   la función 'ceiling' produce el mas pequeño entero que no es menor que el argumento.</description>
+	<description lang="rus">Оператор div производит деление, оператор mod возвращает остаток от деления нацело. Функция  floor возвращает максимальное целое чило, не большее аргумента. Функция ceiling возвращает минимальное целое число, не меньшее аргумента.</description>
+	<description lang="chi">div运算符做浮点除法运算, mod运算符做求余运算, floor函数返回不大于参数的最大整数(趋近于正无穷), ceiling返回不小于参数的最小整数(趋近于负无穷)</description>
+	<source>
+		<AAA>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+			<BBB/>
+			<CCC/>
+			<CCC/>
+			<CCC/>
+		</AAA>
+	</source>
+	<example path="//BBB[position() mod 2 = 0 ]">
+	        <p lang="ita">Selezione degli elementi BBB localizzati in posizioni pari.</p>
+		<p lang="eng">Select even BBB elements</p>
+		<p lang="ger">Wähle alle BBB Elemente aus, deren Position eine gerade Zahl ausmacht</p>
+		<p lang="rus"/>
+		<p lang="chi">选择偶数位置的BBB元素</p>
+	</example>
+	<example path="//BBB[ position() = floor(last() div 2 + 0.5) or position() = ceiling(last() div 2 + 0.5) ]">
+                <p lang="ita">Selezione dell'elemento (o degli elementi) BBB localizzato in posizioni centrali.</p>
+		<p lang="eng">Select  middle BBB element(s)</p>
+		<p lang="ger">Wähle das/die mittlere(n) BBB Element(e) aus</p>
+		<p lang="rus"/>
+		<p lang="chi">选择中间的BBB元素</p>
+	</example>
+	<example path="//CCC[ position() = floor(last() div 2 + 0.5) or position() = ceiling(last() div 2 + 0.5) ]">
+                <p lang="ita">Selezione dell'elemento (o degli elementi) CCC localizzato in posizioni centrali.</p>
+		<p lang="eng">Select  middle CCC element(s)</p>
+		<p lang="ger">Wähle das/die mittlere(n) CCC Element(e) aus</p>
+		<p lang="rus"/>
+		<p lang="chi">选择中间的CCC元素</p>
+	</example>
+</XPathTutorial>

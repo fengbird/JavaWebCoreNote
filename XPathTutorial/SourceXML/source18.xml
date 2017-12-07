@@ -1,0 +1,50 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>preceding::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse preceding contiene tutti i nodi che sono presenti nello stesso documento del nodo contestuale e che sono precedenti rispetto a esso secondo l'ordine del documento, esclusi nodi progenitori, di attributo o di namespace</description>
+	<description lang="eng">The preceding axis contains all nodes in the same document as the context node that are before the context node in  document order, excluding any ancestors and excluding attribute nodes and namespace nodes</description>
+	<description lang="ger">Die "preceding" Achse enthält alle Knoten im gleichen Dokument als Kontextknoten, die sich in der Reihenfolge des Dokuments vor dem Kontextknoten befinden. Nachfahren sowie Attribut- und Namensraumknoten sind hierbei ausgeschlossen.</description>
+	<description lang="cze">
+Osa "preceding" (předcházející) obsahuje všechny uzly v tom samém
+dokumentu, které se vyskytují po uzlu, který je v kontextu,
+a to podle pořadí v dokumentu ("document order") a vyjma
+jakýchkoli předků, atributů a uzlů jmenných prostorů.
+</description>
+	<description lang="fre">l'axe cible précédente (preceding-sibling) contient tous les prédécesseurs du noeud contextuel; si le noeud contextuel est un attribut ou un espace de noms, la cible précédente est vide.</description>
+	<description lang="dut">De preceding spil bevat alle geledingen die in hetzelfde documentstaan als de context geleding voor de context geleding behalve de ouder elementen en de atribuut en namespace geledingen.</description>
+	<description lang="spa">El eje 'preceding' contiene todos los nodos del documento
+   que se encuentran antes del nodo del contexto. Esto no incluye ancestros, descendientes,
+   nodos de atributo ni nodos 'namespace'.</description>
+	<description lang="rus">Ось preceding содержит в том же порядке, что и в самом документе, все узлы, идущие перед контекстным узлом, исключая любых предков, узлов атрибутов и пространств имен.</description>
+	<description lang="chi">following轴(axis)包含同一文档中按文档顺序位于上下文节点之前的所有节点, 除了祖先节点,属性节点和命名空间节点</description>
+	<source>
+		<AAA>
+			<BBB>
+				<CCC/>
+				<ZZZ>
+					<DDD/>
+				</ZZZ>
+			</BBB>
+			<XXX>
+				<DDD>
+					<EEE/>
+					<DDD/>
+					<CCC/>
+					<FFF/>
+					<FFF>
+						<GGG/>
+					</FFF>
+				</DDD>
+			</XXX>
+			<CCC>
+				<DDD/>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/XXX/preceding::*">
+		<p lang="rus"/>
+	</example>
+	<example path="//GGG/preceding::*">
+		<p lang="rus"/>
+	</example>
+</XPathTutorial>

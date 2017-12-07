@@ -1,0 +1,69 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>ancestor::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse ancestor contiene i progenitori del nodo contestuale: i progenitori del nodo contestuale consistono nel genitore del nodo contestuale, nel genitore del genitore e cos&#xEC; via. Dunque, l'asse ancestor contiene sempre il nodo radice, tranne nel caso in cui il nodo contestuale sia esso stesso il nodo radice.</description>
+	<description lang="eng">The ancestor axis contains the ancestors of the context node; the ancestors of the context node consist of the parent of   context node and the parent's parent and so on; thus, the ancestor axis will always include the root node, unless the context node is the root node.
+</description>
+	<description lang="ger">Die "ancestor" Achse enthält die Vorfahren eines Kontextknotens. Die Vorfahren eines Kontextknotens bestehen aus dem Elternknoten des Kontextknotens und die Elternknoten der Elternknoten usw. Daher enthält die "ancestor" Achse immer den Wurzelknoten, es sei denn der Wurzelknoten ist nicht der Kontextknoten.</description>
+	<description lang="cze">
+Osa předků obsahuje předku uzlu, který je v kontextu;
+předkové tohoto uzlu jsou rodiče, rodiče rodičů atd.
+Proto osa předků vždy obsahuje kořen dokumentu,
+pokud ovšem uzlem v kontextu není sám kořen dokumentu.
+</description>
+	<description lang="fre">
+l'axe ancêtre (ancestor) contient les ancêtres du noeud contextuel; cela comprend son parent et les parents des parents etc... Aussi, cet axe contient toujours le noeud racine, sauf si le noeud contextuel est lui-même la racine.
+</description>
+	<description lang="dut">De ancestor spil bevat de onderdanen van de context geleding. De onderdanen van de context geleding bestaan uit de ouder van de context geleding en de ouder van de ouder enzovoort. Zodoende dat de onderdaan spil altijd de basis geleding bevat tenzij de contexxt gelding de basis geleding is.</description>
+	<description lang="spa">El eje 'ancestor' contiene los ancestros del nodo 
+   del contexto, que son el padre del nodo y sus ancestros; 
+   Se deduce entonces que el eje 'ancestor' de un patron correspondiente
+   a al menos un nodo contiene el elemento raiz salvo en 
+   el caso de que el contexto especifique únicamente la raiz misma.</description>
+	<description lang="rus">Ось ancestor содержит предков контекстного узла; предками контесктного узла являются родитель контесктного узла, родитель родителя и так далее; Таким образом, ось ancestor всегда включает корневой узел, заисключением случая, когда контекстный узел является корневым.</description>
+	<description lang="chi">ancestor轴(axis)包含上下节点的祖先节点, 该祖先节点由其上下文节点的父节点以及父节点的父节点等等诸如此类的节点构成,所以ancestor轴总是包含有根节点,除非上下文节点就是根节点本身.</description>
+	<source>
+		<AAA>
+			<BBB>
+				<DDD>
+					<CCC>
+						<DDD/>
+						<EEE/>
+					</CCC>
+				</DDD>
+			</BBB>
+			<CCC>
+				<DDD>
+					<EEE>
+						<DDD>
+							<FFF/>
+						</DDD>
+					</EEE>
+				</DDD>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/AAA/BBB/DDD/CCC/EEE/ancestor::*">
+	        <p lang="ita">Selezione di tutti gli elementi che figurano in questo path assoluto.</p>
+		<p lang="eng">Select all elements given in this absolute path</p>
+		<p lang="ger">Wähle alle Elemente im angegebenen absoluten Pfad aus</p>
+		<p lang="cze">Vyber všechny elementy, které jsou uvedeny v této absolutní cestě</p>
+		<p lang="fre">Séléctionne tous les éléments donnés dans ce chemin absolu</p>
+		<p lang="dut">Selecteert alle elementen van dit exacte path</p>
+		<p lang="spa">Selecciona exactamente los elementos que aparecen en este 
+      camino absoluto</p>
+		<p lang="rus">Выбираются все узлы, перечисленные в этом абсолютном пути</p>
+		<p lang="chi">选择一个绝对路径上的所有节点</p>
+	</example>
+	<example path="//FFF/ancestor::*">
+	        <p lang="ita">Selezione dei progenitori dell'elemento FFF</p>
+		<p lang="eng">Select ancestors of FFF element</p>
+		<p lang="ger">Wähle alle Vorfahren vom FFF Element aus</p>
+		<p lang="cze">Vyber všechny předky elementů FFF</p>
+		<p lang="fre">Séléctionne tous les ancêtres de l'élément FFF</p>
+		<p lang="dut">Selecteert de onderdanen van het FFF element</p>
+		<p lang="spa">Selecciona los ancestros de cada elemento FFF</p>
+		<p lang="rus">Выбираются все предки элемента FFF</p>
+		<p lang="chi">选择FFF元素的祖先节点</p>
+	</example>
+</XPathTutorial>

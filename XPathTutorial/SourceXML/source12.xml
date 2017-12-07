@@ -1,0 +1,89 @@
+<XPathTutorial creator="nicmila@systinet.com">
+	<key>descendant::</key>
+	<key>axes</key>
+	<description lang="ita">L'asse descendant contiene i discendenti del nodo contestuale; un discendente &#xE8; un figlio o il figlio di un figlio e cos&#xEC; via. Dunque, l'asse descendant non contiene mai nodi di attributo o di namespace.</description>
+	<description lang="eng">The descendant axis contains the descendants of the context node; a descendant is a child or a child of a child and so on; thus the descendant axis never contains attribute or namespace nodes</description>
+	<description lang="ger">Die "descendant" Achse enthält alle Nachfahren des Kontextknotens; ein Nachfahre ist ein Kind oder ein Kind eines Kindes usw.; daher enthält die "descendant" Achse niemals Attribute oder Namensraumknoten</description>
+	<description lang="cze">
+Osa potomků (descendant axis) obsahuje potomky uzlu, který
+je v kontextu; 
+potomek je přímý potomek (dítě, "child") nebo přímý potomek
+přímého potomka atd.
+Proto osa potomků nikdy neobsahuje uzly typu atribut nebo jmenný prostor.
+</description>
+	<description lang="fre">
+l'axe descendant (descendant) contient les descendants du noeud contextuel; un descendant est un enfant ou un petit enfant etc... Aussi, l'axe descendant ne contient jamais de noeud de type attribut ou des noms d'espace.</description>
+	<description lang="dut">De descendant spil bevat de onderdanen van de context geleding, Een onderdaan is een kind of een kind van een kind, zodoende bevat een onderdaan nooit attribuut of namespace geledingen.</description>
+	<description lang="spa">El eje 'descendant' contiene a los descendientes del 
+   nodo de contexto; los descendientes son los hijos del nodo y sus descendientes; 
+   El eje 'descendant' nunca contiene ni atributos ni nodos 'namespace'.
+</description>
+	<description lang="rus">Ось descendant содержит потомков контекстного узла; потомком является дочерний элемент, дочерний элемент дочернего элемента и так далее; таким образом ось descendant не содержит узлов атрибутов и пространств имен.
+</description>
+<description lang="chi">descendant (后代)轴包含上下文节点的后代,一个后代是指子节点或者子节点的子节点等等, 因此descendant轴不会包含属性和命名空间节点. </description>
+	<source>
+		<AAA>
+			<BBB>
+				<DDD>
+					<CCC>
+						<DDD/>
+						<EEE/>
+					</CCC>
+				</DDD>
+			</BBB>
+			<CCC>
+				<DDD>
+					<EEE>
+						<DDD>
+							<FFF/>
+						</DDD>
+					</EEE>
+				</DDD>
+			</CCC>
+		</AAA>
+	</source>
+	<example path="/descendant::*">
+	        <p lang="ita">Selezione di tutti i discendenti della radice del documento: dunque, tutti gli elementi presenti nel documento.</p>
+		<p lang="eng">Select all descendants  of document root and therefore all elements</p>
+		<p lang="ger">Wähle alle Nachfahren des Wurzelknotens des Dokuments aus - also alle Elemente</p>
+		<p lang="cze">Vyber všechny potomky kořenového elementu - tj. všechny elementy</p>
+		<p lang="fre">Sélectionne tous les descendants de l'élément racine et donc tous les éléments</p>
+		<p lang="dut">Selecteert alle onderdanen van de basisdocument element of anders gezegd alle elementen van het document</p>
+		<p lang="spa">Selecciona todos los descendientes de la raiz, es decir, todos los elementos.</p>
+		<p lang="rus">Выбираются все потомки корневого узла, то есть все элементы</p>
+		<p lang="chi">选择文档根元素的所有后代.即所有的元素被选择</p>
+	</example>
+	<example path="/AAA/BBB/descendant::*">
+	        <p lang="ita">Selezione di tutti i discendenti di /AAA/BBB</p>
+		<p lang="eng">Select all descendants of /AAA/BBB</p>
+		<p lang="ger">Wähle alle Nachfahren von /AAA/BBB aus</p>
+		<p lang="cze">Vyber všechny potomky elementu /AAA/BBB</p>
+		<p lang="fre">Sélectionne tous les descendants de /AAA/BBB</p>
+		<p lang="dut">Selecteert alle onderdanen van /AAA/BBB</p>
+		<p lang="spa">Selecciona todos los descendientes de /AAA/BBB</p>
+		<p lang="rus">Выбираются все потомки элементов, соответствующих пути /AAA/BBB</p>
+		<p lang="chi">选择/AAA/BBB的所有后代元素</p>
+	</example>
+	<example path="//CCC/descendant::*">
+	        <p lang="ita">Selezione di tutti gli elementi che presentano CCC fra i loro progenitori.</p>
+		<p lang="eng">Select all elements which have CCC among its ancestors</p>
+		<p lang="ger">Wähle alle Elemente aus, die CCC unter ihren Vorfahren haben</p>
+		<p lang="cze">Vyber všechny elementy, které mají za předka element CCC</p>
+		<p lang="fre">Sélectionne tous les éléments qui ont CCC comme ancêtre</p>
+		<p lang="dut">Selecteert alle element die het CCC element als onderdaan hebben</p>
+		<p lang="spa">Selecciona todos elementos con un ancestro CCC</p>
+		<p lang="rus">Выбираются все элементы, имеющие в качестве предка элемент CCC</p>
+		<p lang="chi">选择在祖先元素中有CCC的所有元素</p>
+	</example>
+	<example path="//CCC/descendant::DDD">
+	        <p lang="ita">Selezione degli elementi DDD che presentano CCC fra i loro progenitori.</p>
+		<p lang="eng">Select elements DDD which have CCC among its ancestors</p>
+		<p lang="ger">Wähle alle DDD Elemente aus, die CCC unter ihren Vorfahren haben</p>
+		<p lang="cze">Vyber elemnty DDD, které mají element CCC jako předka</p>
+		<p lang="fre">Sélectionne les éléments DDD qui ont CCC comme ancêtre</p>
+		<p lang="dut">Selecteert alle DDD elementen die een CCC element als onderdaan hebben</p>
+		<p lang="spa">Selecciona todos elementos DDD con un ancestro CCC</p>
+		<p lang="rus">Выбираются элементы DDD, имеющие в качестве предка элемент CCC</p>
+		<p lang="chi">选择所有以CCC为祖先元素的DDD元素</p>
+	</example>
+</XPathTutorial>
