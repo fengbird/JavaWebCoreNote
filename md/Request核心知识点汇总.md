@@ -41,7 +41,7 @@
 ##### 常用方法
 
 * getRequestDispatcher(String path)
-  *  返回封装了某个路径所指定资源的RequestDispatcher对象。其中，参数path必须以"/"开头，用于表示当前Web应用的根目录。需要注意的是，WEB-INF目录中的内容对RequestDispatcher对象也是可见的，因此，传递给getRequestDispatcher(String path) 方法的资源可以是WEB-INF目录中的文件。
+  *  返回封装了某个路径所指定资源的RequestDispatcher对象。其中，参数path以"/"开头时，用于表示当前Web应用的根目录(即：localhost:8080/项目名/)。需要注意的是，WEB-INF目录中的内容对RequestDispatcher对象也是可见的，因此，传递给getRequestDispatcher(String path) 方法的资源可以是WEB-INF目录中的文件。若不加"/"，代表相对路径，相对于当前Servlet所在路径进行拼接。当为相对路径时，`reqeust.getRequestDispatcher("jsp/index.jsp")`,当前Servlet的层级路径为`localhost:8080/项目名/ttt/test` 那么转发的路径就为` localhost:8080/项目名/ttt/jsp/index.jsp` 。
 * forward(ServletRequest request,ServletResponse response)
   * 该方法用于将请求从一个Servlet传递给另外的一个Web资源。在Servlet中，可以对请求做一个初步处理，然后通过调用这个方法，将请求传递给其他资源进行响应。需要注意的是，该方法必须在响应提交给客户端之前被调用，否则将抛出IllegalStateException异常
 
