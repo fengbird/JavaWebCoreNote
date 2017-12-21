@@ -26,5 +26,6 @@
 - [16. 过滤器监听器核心知识点汇总](md/过滤器监听器核心知识点汇总.md)
 - [17. 动态代理与类加载器核心知识点汇总](md/动态代理与类加载器核心知识点汇总.md)
 - [18. DBUtils与BeanUtils以及Gson工具类](md/DBUtils与BeanUtils以及Gson工具类.md)
+- [19. Linux及虚拟机异常处理方案](md/Linux及虚拟机异常处理方案.md)
 
 
